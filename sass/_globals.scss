@@ -1,6 +1,7 @@
 // Importar las variables
 @use "./variables";
 
+
 // HEADER
 .cabecera-container {
     background-color: variables.$color-bg-2;
@@ -13,6 +14,51 @@
 
     // Logo
     .logo a img {
-        max-width: 7rem;
+        max-width: 10rem;
+    }
+}
+
+
+// SECCION HOME
+// Mixins
+@mixin section-display {
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+    padding: 6rem 3em 2rem;
+}
+
+.sec-home {
+    display: flex;
+    @include section-display();
+    align-items: center;
+    justify-content: space-between;
+    .home-cta {
+        .cta-text {
+            color: variables.$color-primary;
+        }
+
+        .home-title {
+            width: 20rem;
+            font-size: 3rem;
+            color: variables.$color-white
+        }
+
+        .home-description {
+            width: 500px;
+            color: variables.$color-white
+        }
+
+        .lead-magnet {
+            a {
+                margin-right: 2rem;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .home-img img{
+        width: 18rem;
+        border-radius: 50px;
     }
 }
