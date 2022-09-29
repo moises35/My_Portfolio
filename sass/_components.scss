@@ -1,3 +1,76 @@
 // Importar las variables
 @use "./variables";
 
+// Estilos básicos para el documento en general
+html {
+    background-color: variables.$color-bg;
+    min-width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// BOTONES
+// Mixin para los botones
+@mixin btn-base {
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+}
+
+@mixin btn-sm-modify {
+    font-family: variables.$font-family;
+    font-weight: variables.$medium;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.6rem;
+}
+
+
+.btn-cv {
+    @include btn-base();
+    background-color: variables.$color-bg;
+    color: variables.$color-white;
+    border: solid 1px variables.$color-primary;
+
+    &:hover {
+        // background-color: variables.$color-primary;
+        color: variables.$color-primary;
+        border: solid 1px variables.$color-white;
+    }
+
+    &-s {
+        @extend .btn-cv;
+        @include btn-sm-modify();
+    }
+} 
+
+
+// Lista de navegación
+.nav {
+    nav {
+        .list-nav {
+            margin-bottom: 0;
+            li {
+                font-family: variables.$font-family;
+                font-weight: variables.$medium;
+                font-size: 0.95rem;
+                list-style: none;
+                display: inline;
+                margin-right: 3rem;
+                
+                a {
+                    color: variables.$color-white;
+                    text-decoration: none;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                        color: variables.$color-primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
