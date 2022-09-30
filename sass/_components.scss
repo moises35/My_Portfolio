@@ -9,12 +9,15 @@
 html {
     background-color: variables.$color-bg;
     min-width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: variables.$color-bg;
+    overflow-x: hidden;
+
 }
 
 // BOTONES

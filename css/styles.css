@@ -21,24 +21,50 @@
   align-items: center;
   justify-content: space-between;
 }
+.sec-home .home-cta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 .sec-home .home-cta .cta-text {
   color: #00ADB5;
 }
 .sec-home .home-cta .home-title {
-  width: 20rem;
   font-size: 3rem;
   color: #FFFFFF;
 }
 .sec-home .home-cta .home-description {
-  width: 500px;
+  max-width: 414px;
   color: #FFFFFF;
 }
 .sec-home .home-cta .lead-magnet a {
   margin-right: 2rem;
+  text-decoration: none;
 }
 .sec-home .home-img img {
+  flex: 1;
+  display: flex;
   width: 18rem;
   border-radius: 50px;
+}
+
+.sec-about-me {
+  display: flex;
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 6rem 3em 2rem;
+  padding: 3rem 3em 3rem;
+  flex-direction: column;
+  justify-content: start;
+}
+.sec-about-me .about-title {
+  font-size: 2rem;
+  color: #00ADB5;
+}
+.sec-about-me .about-text {
+  max-width: 100%;
+  color: #FFFFFF;
 }
 
 * {
@@ -48,12 +74,14 @@
 html {
   background-color: #1A1A29;
   min-width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: #1A1A29;
+  overflow-x: hidden;
 }
 
 .btn-cv, .btn-cv-s {
