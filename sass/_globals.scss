@@ -1,6 +1,25 @@
 // Importar las variables
 @use "./variables";
 
+// Estilos básicos para el documento en general
+* {
+    font-family: variables.$font-family;
+}
+
+html {
+    background-color: variables.$color-bg;
+    min-width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: variables.$color-bg;
+    overflow-x: hidden;
+
+}
 
 // HEADER
 .cabecera-container {
