@@ -187,3 +187,102 @@
         }
     }
 }
+
+
+// Proyectos
+// Contenedor de proyectos
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+
+    .card-project {
+        width: 284px;
+        height: 385px;
+        background-color: variables.$color-card-project-bg;
+        border-radius: 5%;
+        margin: 0 12px 32px 0;
+        padding: 12px 12px 0 12px;
+        justify-content: start;
+        align-items: center;;
+
+        .card-project-img {
+            width: 100%;
+            height: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .card-project-content-text {
+            margin: 1rem 1rem 0;
+            color: variables.$color-white;
+            .card-project-title {
+                font-size: large;
+                font-weight: variables.$semi-bold;
+                text-transform: uppercase;
+                color: variables.$color-primary;
+            }
+            .card-project-description {
+                height: 78px;
+                font-size: small;
+                font-weight: variables.$regular;
+                overflow-x: hidden;
+                overflow-y: auto;
+
+                /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+                &::-webkit-scrollbar {
+                    -webkit-appearance: none;
+                }
+
+                &::-webkit-scrollbar:vertical {
+                    width:5px;
+                }
+
+                &::-webkit-scrollbar-button:increment,&::-webkit-scrollbar-button {
+                    display: none;
+                } 
+
+                &::-webkit-scrollbar:horizontal {
+                    height: 10px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: #797979;
+                    border-radius: 20px;
+                    border: 2px solid #f1f2f3;
+                }
+
+                &::-webkit-scrollbar-track {
+                    border-radius: 10px;  
+                }
+
+            }
+        }
+
+        .buttons-project {
+            display: flex;
+            align-content: flex-end;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+            a {
+                button {
+                    font-size: revert;
+                }
+            }
+        }
+        
+    }
+}

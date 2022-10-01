@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  background-color: #1A1A29;
+  min-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1A1A29;
+  overflow-x: hidden;
+}
+
 .cabecera-container {
   background-color: #181824;
   display: flex;
@@ -86,21 +104,25 @@
   margin-bottom: 2rem;
 }
 
-* {
-  font-family: "Poppins", sans-serif;
+.sec-projects {
+  display: flex;
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 6rem 3em 2rem;
+  padding: 0 3em 3rem;
+  flex-direction: column;
+  justify-content: center;
 }
-
-html {
-  background-color: #1A1A29;
-  min-width: 100vw;
-  overflow-x: hidden;
+.sec-projects .projects-title {
+  font-size: 2rem;
+  color: #00ADB5;
+  text-align: center;
+  margin-bottom: 2rem;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #1A1A29;
-  overflow-x: hidden;
+.sec-projects .projects-text {
+  max-width: 100%;
+  color: #FFFFFF;
 }
 
 .btn-cv, .btn-cv-s {
@@ -237,6 +259,88 @@ body {
 }
 .services .card-services:nth-child(odd) .card-content .card-services-text .card-services-title {
   color: #FFFFFF;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+.projects .card-project {
+  width: 284px;
+  height: 385px;
+  background-color: #31313F;
+  border-radius: 5%;
+  margin: 0 12px 32px 0;
+  padding: 12px 12px 0 12px;
+  justify-content: start;
+  align-items: center;
+}
+.projects .card-project .card-project-img {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  overflow: hidden;
+}
+.projects .card-project .card-project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projects .card-project .card-project-content-text {
+  margin: 1rem 1rem 0;
+  color: #FFFFFF;
+}
+.projects .card-project .card-project-content-text .card-project-title {
+  font-size: large;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #00ADB5;
+}
+.projects .card-project .card-project-content-text .card-project-description {
+  height: 78px;
+  font-size: small;
+  font-weight: 400;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+}
+.projects .card-project .card-project-content-text .card-project-description::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.projects .card-project .card-project-content-text .card-project-description::-webkit-scrollbar:vertical {
+  width: 5px;
+}
+.projects .card-project .card-project-content-text .card-project-description::-webkit-scrollbar-button:increment, .projects .card-project .card-project-content-text .card-project-description::-webkit-scrollbar-button {
+  display: none;
+}
+.projects .card-project .card-project-content-text .card-project-description::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+.projects .card-project .card-project-content-text .card-project-description::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+.projects .card-project .card-project-content-text .card-project-description::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.projects .card-project .buttons-project {
+  display: flex;
+  align-content: flex-end;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.projects .card-project .buttons-project a button {
+  font-size: revert;
 }
 
 /*# sourceMappingURL=styles.css.map */
