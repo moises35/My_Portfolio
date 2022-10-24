@@ -47,6 +47,25 @@ body {
 .sec-home .home-cta .cta-text {
   color: #00ADB5;
 }
+.sec-home .home-cta .cta-text .writting {
+  display: block;
+  font-family: inherit;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 16ch;
+  animation: typing 2s steps(16), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 .sec-home .home-cta .home-title {
   font-size: 3rem;
   color: #FFFFFF;

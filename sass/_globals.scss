@@ -64,6 +64,24 @@ body {
         flex-direction: column;
         .cta-text {
             color: variables.$color-primary;
+            .writting {
+                display: block;
+                font-family: inherit;
+                white-space: nowrap;
+                border-right: 4px solid;
+                width: 16ch;
+                animation: typing 2s steps(16), blink .5s infinite step-end alternate;
+                overflow:hidden;
+            }
+
+            // Utilizar keyframes
+            @keyframes typing {
+                from { width: 0}
+            }
+            
+            @keyframes blink {
+                50% { border-color: transparent}
+            }
         }
 
         .home-title {
