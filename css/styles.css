@@ -77,22 +77,26 @@ body {
 .sec-home .home-cta .cta-text {
   color: #00ADB5;
 }
-.sec-home .home-cta .cta-text .writting {
-  display: block;
+.sec-home .home-cta .cta-text .write {
+  position: relative;
+  float: left;
   font-size: 1.2rem;
-  font-family: inherit;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 19ch;
-  animation: typing 2s steps(19), blink 0.5s infinite step-end alternate;
-  overflow: hidden;
+  padding-right: 3px;
 }
-@keyframes typing {
+.sec-home .home-cta .cta-text .write span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background-color: #1A1A29;
+  border-left: 3px solid;
+  animation: escribir 3s steps(30), blink 0.5s infinite step-end alternate;
+}
+@keyframes escribir {
   from {
-    width: 0;
+    width: 100%;
   }
   to {
-    width: 19ch;
+    width: 0;
   }
 }
 @keyframes blink {
