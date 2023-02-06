@@ -11,14 +11,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- AOS - Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Hojas de estilo -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" href="./css/scrollTopBtn.css">
 </head>
 
 <body>
     <!-- Loader -->
-    <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
+    <div class="lds-ring loader" id="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 
     <!-- Header -->
     <header class="cabecera-container" id="home">
@@ -50,7 +58,7 @@
     </header>
 
     <!-- Sección del "Home" -->
-    <section class="sec-home">
+    <section class="sec-home" id="home">
         <!-- Columna 1 -->
         <div class="home-cta">
             <!-- Texto -->
@@ -58,7 +66,7 @@
                 <span class="writting">Hola! Mi nombre es,</span>
             </div>
             <h2 class="home-title h2">Moisés<br>Alvarenga</h2>
-            <p class="home-description">
+            <p class="home-description" data-aos="fade-right" data-aos-duration="700">
                 I'm a software engineer based on Paraguay. I love everything related to frontend such as css,
                 javascript, a11y and also performance. I am focused on building deligthful user experiences with
                 high-quality code.
@@ -66,13 +74,13 @@
             <!-- Botones -->
             <div class="lead-magnet align-items-center">
                 <a href="#" target="_blank">
-                    <button class="btn-home-cv">Resumen
+                    <button class="btn-home-cv" data-aos="fade-up" data-aos-duration="800">Resumen
                         <i class="bi bi-file-earmark-pdf-fill"></i>
                     </button>
                 </a>
 
-                <a href="#" target="_blank">
-                    <button class="btn-home-git">Ir a GitHub
+                <a href="https://github.com/moises35" target="_blank">
+                    <button class="btn-home-git" data-aos="fade-up" data-aos-duration="1000">Ir a GitHub
                         <i class="bi bi-github"></i>
                     </button>
                 </a>
@@ -89,19 +97,74 @@
 
     <!-- Sección del "About Me" -->
     <section class="sec-about-me" id="aboutMe">
-        <h2 class="about-title">About Me</h2>
-        <p class="about-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nam modi error, rerum dolorem animi, sequi
-            obcaecati commodi sint nihil maxime perspiciatis, officia exercitationem quibusdam reiciendis accusamus
-            debitis nostrum illum.
+        <h2 class="about-title">Sobre mi</h2>
+        <p class="about-text" data-aos="fade-down" data-aos-duration="1000">
+            Soy estudiante de la carrera de Ingeniería en Informática en la Universidad Nacional de Asunción - Facultad
+            Politécnica (FP-UNA)👨🏻‍💻📚
         </p>
-        <p class="about-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nam modi error, rerum dolorem animi, sequi
-            obcaecati commodi sint nihil maxime perspiciatis, officia exercitationem quibusdam reiciendis accusamus
-            debitis nostrum illum.
+        <p class="about-text" data-aos="fade-down" data-aos-duration="1000">
+            Actualmente me encuentro más enfocado en el desarrollo web, específicamente en el stack de tecnologías MERN.
+            Me encanta y me apasiona aprender nuevas tecnologías, manejo de herramientas, como así también todo lo que
+            sea beneficioso para mi crecimiento profesional📈
+            Estoy abierto al trabajo colaborativo, a las criticas constructivas y a ampliar mis conocimientos con todo
+            lo que se requiera para un proyecto en particular🤝🏻
         </p>
     </section>
 
+    <!-- Sección de Skills -->
+    <section class="sec-skills" id="sec-skills">
+        <h2 class="skills-title">Habilidades</h2>
+        <div class="skills">
+            <div>
+                <img src="./assets/img/icons/skills/html.svg" alt="html" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/css.svg" alt="css" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/js.svg" alt="js" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/react-js.svg" alt="react" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/expressjs.svg" alt="express" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/nodejs.svg" alt="nodejs" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/mongodb.svg" alt="mongodb" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/sass.svg" alt="sass" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/postgresql.svg" alt="postgresql" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/mysql.svg" alt="mysql" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/github.svg" alt="github" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/git.svg" alt="git" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/c.svg" alt="c" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/python.svg" alt="python" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/java.svg" alt="java" />
+            </div>
+            <div>
+                <img src="./assets/img/icons/skills/figma.svg" alt="figma" />
+            </div>
+        </div>
+    </section>
 
     <!-- Sección de "Services"   -->
     <section class="sec-services" id="services">
@@ -208,7 +271,7 @@
 
     <!-- Sección de proyectos -->
     <section class="sec-projects" id="project">
-        <h2 class="projects-title">Projsects</h2>
+        <h2 class="projects-title">Proyectos</h2>
         <p class="projects-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio cum odit delectus
             aspernatur harum animi quaerat accusamus autem ex? Numquam</p>
         <!-- Contenedor de proyectos -->
@@ -337,10 +400,17 @@
             <div class="wave" id="wave3"></div>
             <div class="wave" id="wave4"></div>
         </div>
-        <p>Grcais por ver mi trabajo</p>
+        <p>¡Gracias por ver mi trabajo!<br>Hecho por <strong>Moisés Alvarenga, 2023</strong></p>
     </footer>
+
+    <!-- Boton para volver al inicio -->
+    <div class="scrollTop"></div>
+
     <!-- Scripts -->
-    <script src="./js/loader.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 </body>
 
 </html>

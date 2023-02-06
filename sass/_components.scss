@@ -41,7 +41,7 @@
         font-size: 1.5rem;
         margin-left: 0.5rem;
     }
-} 
+}
 
 
 // Lista de navegación
@@ -49,6 +49,7 @@
     nav {
         .list-nav {
             margin-bottom: 0;
+
             li {
                 font-family: variables.$font-family;
                 font-weight: variables.$medium;
@@ -56,7 +57,7 @@
                 list-style: none;
                 display: inline;
                 margin-right: 3rem;
-                
+
                 a {
                     color: variables.$color-white;
                     text-decoration: none;
@@ -65,7 +66,7 @@
                     background-repeat: no-repeat;
                     background-size: 0% 2px;
                     transition: background-size .3s;
-                    
+
                     &:hover {
                         color: variables.$color-primary;
                         background-size: 100% 2px;
@@ -90,11 +91,13 @@
     padding: 0.5rem 0.7rem;
     border-radius: 0.5rem;
     font-size: 1.1rem;
+
     &-cv {
         @extend .btn-home;
         background-color: variables.$color-primary;
         color: variables.$color-white;
         border: solid 1px variables.$color-primary;
+
         &:hover {
             background-color: transparent;
             border: solid 1px variables.$color-white;
@@ -107,6 +110,7 @@
         background-color: transparent;
         color: variables.$color-white;
         border: solid 1px variables.$color-primary;
+
         &:hover {
             background-color: variables.$color-primary;
             color: variables.$color-white;
@@ -120,6 +124,63 @@
     }
 }
 
+// SKILLS
+// Contenedor de skills
+.skills {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+    margin-top: 3rem;
+
+    div {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div>img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    div:nth-child(2n)>img {
+        animation: animSkill 2s infinite linear alternate;
+    }
+
+    div:nth-child(2n + 1)>img {
+        animation: animSkill2 2s infinite linear alternate;
+    }
+
+    li {
+        font-size: 1.5rem;
+    }
+
+    @keyframes animSkill {
+        0% {
+            transform: scale(0.7) rotate(-15deg);
+        }
+
+        100% {
+            transform: scale(1) rotate(0);
+        }
+    }
+
+    @keyframes animSkill2 {
+        0% {
+            transform: scale(0.7) rotate(15deg);
+        }
+
+        100% {
+            transform: scale(1) rotate(0);
+        }
+    }
+}
 
 // SERVICIOS
 // Contenedor de servicios
@@ -131,7 +192,7 @@
     align-items: center;
     width: 100%;
     margin: auto;
-    
+
     .card-services {
         width: 284px;
         height: 318px;
@@ -152,10 +213,12 @@
                 margin: 1rem 1rem 0;
                 text-align: center;
                 color: variables.$color-white;
+
                 .card-services-title {
                     font-size: x-large;
                     text-transform: uppercase;
                 }
+
                 .card-services-description {
                     font-size: small;
                     font-weight: variables.$regular;
@@ -166,6 +229,7 @@
         // Para los pares
         &:nth-child(even) {
             border: 1px solid variables.$color-white;
+
             .card-content {
                 .card-services-text {
                     .card-services-title {
@@ -178,6 +242,7 @@
         // Para los impares
         &:nth-child(odd) {
             border: 1px solid variables.$color-primary;
+
             .card-content {
                 .card-services-text {
                     .card-services-title {
@@ -207,7 +272,7 @@
     width: 100%;
     margin: auto;
 
-    .card-project { 
+    .card-project {
         width: 284px;
         height: 385px;
         background-color: variables.$color-card-project-bg;
@@ -215,7 +280,8 @@
         margin: 0 12px 32px 0;
         padding: 12px 12px 0 12px;
         justify-content: start;
-        align-items: center;;
+        align-items: center;
+        ;
         transition: 0.3s;
 
         .card-project-img {
@@ -239,12 +305,14 @@
         .card-project-content-text {
             margin: 1rem 1rem 0;
             color: variables.$color-white;
+
             .card-project-title {
                 font-size: large;
                 font-weight: variables.$semi-bold;
                 text-transform: uppercase;
                 color: variables.$color-primary;
             }
+
             .card-project-description {
                 height: 78px;
                 font-size: small;
@@ -258,12 +326,13 @@
                 }
 
                 &::-webkit-scrollbar:vertical {
-                    width:5px;
+                    width: 5px;
                 }
 
-                &::-webkit-scrollbar-button:increment,&::-webkit-scrollbar-button {
+                &::-webkit-scrollbar-button:increment,
+                &::-webkit-scrollbar-button {
                     display: none;
-                } 
+                }
 
                 &::-webkit-scrollbar:horizontal {
                     height: 10px;
@@ -276,7 +345,7 @@
                 }
 
                 &::-webkit-scrollbar-track {
-                    border-radius: 10px;  
+                    border-radius: 10px;
                 }
 
             }
@@ -288,6 +357,7 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: flex-end;
+
             a {
                 button {
                     font-size: revert;

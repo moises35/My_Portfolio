@@ -218,6 +218,19 @@ body {
     }
 }
 
+// Sección de Skills	
+.sec-skills {
+    display: flex;
+    @include section-display();
+    padding: 0 3em 3rem;
+    flex-direction: column;
+    justify-content: center;
+
+    .skills-title {
+        @include section-title();
+        text-align: center;
+    }
+}
 
 // Sección de Contacto
 .sec-contact {
@@ -344,10 +357,10 @@ footer {
     width: 100%;
     background-color: #00ADB5;
     min-height: 50px;
-    padding: 8px 50px 20px;
+    padding: 0 50px 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     flex-direction: column;
 
     p {
