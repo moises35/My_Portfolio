@@ -11,9 +11,12 @@ html {
     min-width: 100vw;
     overflow-x: hidden;
     scroll-behavior: smooth;
+
     &::-webkit-scrollbar {
-        width: 8px;     /* Tamaño del scroll en vertical */
-        height: 8px;    /* Tamaño del scroll en horizontal */
+        width: 8px;
+        /* Tamaño del scroll en vertical */
+        height: 8px;
+        /* Tamaño del scroll en horizontal */
         // display: none;  /* Ocultar scroll */
     }
 
@@ -22,13 +25,13 @@ html {
         background: #ccc;
         border-radius: 4px;
     }
-    
+
     /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
     &::-webkit-scrollbar-thumb:hover {
         background: #b3b3b3;
         box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
     }
-    
+
     /* Cambiamos el fondo cuando esté en active */
     &::-webkit-scrollbar-thumb:active {
         background-color: #999999;
@@ -92,12 +95,15 @@ body {
     @include section-display();
     align-items: center;
     justify-content: space-between;
+
     .home-cta {
-        flex:1;
-        display:flex;
+        flex: 1;
+        display: flex;
         flex-direction: column;
+
         .cta-text {
             color: variables.$color-primary;
+
             .writting {
                 display: block;
                 font-size: 1.2rem;
@@ -106,17 +112,24 @@ body {
                 border-right: 4px solid;
                 width: 19ch;
                 animation: typing 2s steps(19), blink .5s infinite step-end alternate;
-                overflow:hidden;
+                overflow: hidden;
             }
 
             // Utilizar keyframes
             @keyframes typing {
-                from { width: 0}
-                to { width: 19ch}
+                from {
+                    width: 0
+                }
+
+                to {
+                    width: 19ch
+                }
             }
-            
+
             @keyframes blink {
-                50% { border-color: transparent}
+                50% {
+                    border-color: transparent
+                }
             }
         }
 
@@ -137,9 +150,9 @@ body {
         }
     }
 
-    .home-img img{
-        flex:1;
-        display:flex;
+    .home-img img {
+        flex: 1;
+        display: flex;
         width: 20rem;
         border-radius: 50%;
     }
@@ -153,6 +166,7 @@ body {
     padding: 3rem 3em 3rem;
     flex-direction: column;
     justify-content: start;
+
     .about-title {
         @include section-title();
         margin-bottom: 1.5rem;
@@ -213,24 +227,192 @@ body {
     flex-direction: column;
     justify-content: center;
     color: variables.$color-white;
-    
+    margin-bottom: 100px;
+
     .contact {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2fr 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-        .min-sec-contact-1 { 
-            grid-area: 1 / 1 / 2 / 2; 
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
         }
 
-        .min-sec-contact-2 { 
-            grid-area: 2 / 1 / 3 / 2; 
+        ul {
+            padding-left: 0;
         }
 
-        .min-sec-contact-3 { 
-            grid-area: 1 / 2 / 3 / 3; 
+        .contact-izq {
+            flex: 1;
+        }
+
+        .contact-der {
+            flex: 1.2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            h2 {
+                font-size: 1.3rem;
+                display: inline-block;
+                padding: 0.8rem 1rem;
+                border-radius: 1.2rem;
+                border: 1px solid variables.$color-primary;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.75;
+                margin-top: 1rem;
+                width: 90%;
+            }
+
+            a {
+                display: block;
+                width: 45%;
+                max-width: 280px;
+                margin: 1rem auto;
+                padding: 0.6rem;
+                text-align: center;
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: var(--grey);
+                font-weight: 600;
+                background-color: rgb(0, 173, 181);
+                transition: transform 200ms ease-in 0s;
+            }
+
+            a:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        .contact--links {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-bottom: 1px solid variables.$color-primary;
+            font-size: 1.5rem !important;
+            margin-top: 2.5rem;
+        }
+
+        .links li {
+            list-style: none;
+        }
+
+        .links li a>img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            animation: animLink 10s infinite alternate;
+        }
+
+        .links li a {
+            border-radius: 3rem;
+            width: 62%;
+            margin: 1.5rem auto;
+            padding: 0.7rem 1rem;
+            border: 1px solid variables.$color-primary;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            color: variables.$color-white;
+            font-size: 1rem;
+        }
+
+        // Animación de los links
+        @keyframes animLink {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #00ADB5;
+    min-height: 50px;
+    padding: 8px 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        color: white;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    .wave {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background:  url("./../assets/img/wave.png");
+        background-size: 1000px 100px;
+    }
+
+    .wave#wave1 {
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWave 4s linear infinite;
+    }
+
+    .wave#wave2 {
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animateWave_02 4s linear infinite;
+    }
+
+    .wave#wave3 {
+        z-index: 1000;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWave 3s linear infinite;
+    }
+
+    .wave#wave4 {
+        z-index: 999;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animateWave_02 3s linear infinite;
+    }
+
+    @keyframes animateWave {
+        0% {
+            background-position-x: 1000px;
+        }
+
+        100% {
+            background-position-x: 0px;
+        }
+    }
+
+    @keyframes animateWave_02 {
+        0% {
+            background-position-x: 0px;
+        }
+
+        100% {
+            background-position-x: 1000px;
         }
     }
 }

@@ -1,359 +1,346 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Moisés Alvarenga | FullStack Developer</title>
-        <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-        <!-- Hojas de estilo -->
-        <link rel="stylesheet" href="./css/styles.css">
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="cabecera-container" id="home">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="#">
-                    <img src="./assets/img/logo.png" alt="logo">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moisés Alvarenga | FullStack Developer</title>
+    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/loader.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
+
+    <!-- Header -->
+    <header class="cabecera-container" id="home">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#">
+                <img src="./assets/img/logo.png" alt="logo">
+            </a>
+        </div>
+
+        <!-- Menú de navegación -->
+        <div class="nav d-none d-md-block">
+            <nav>
+                <ul class="list-nav">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#aboutMe">Sobre mi</a></li>
+                    <li><a href="#project">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Boton para descargar CV -->
+        <div class="download-cv">
+            <a href="#">
+                <button class="btn-cv-s">Resumen</button>
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección del "Home" -->
+    <section class="sec-home">
+        <!-- Columna 1 -->
+        <div class="home-cta">
+            <!-- Texto -->
+            <div class="cta-text">
+                <span class="writting">Hola! Mi nombre es,</span>
+            </div>
+            <h2 class="home-title h2">Moisés<br>Alvarenga</h2>
+            <p class="home-description">
+                I'm a software engineer based on Paraguay. I love everything related to frontend such as css,
+                javascript, a11y and also performance. I am focused on building deligthful user experiences with
+                high-quality code.
+            </p>
+            <!-- Botones -->
+            <div class="lead-magnet align-items-center">
+                <a href="#" target="_blank">
+                    <button class="btn-home-cv">Resumen
+                        <i class="bi bi-file-earmark-pdf-fill"></i>
+                    </button>
+                </a>
+
+                <a href="#" target="_blank">
+                    <button class="btn-home-git">Ir a GitHub
+                        <i class="bi bi-github"></i>
+                    </button>
                 </a>
             </div>
+        </div>
+        <!-- Columna 2 -->
+        <div class="home-img d-none d-md-block">
+            <img src="./assets/img/perfil.jpg" alt="perfil">
+        </div>
+    </section>
 
-            <!-- Menú de navegación -->
-            <div class="nav d-none d-md-block">
-                <nav>
-                    <ul class="list-nav">
-                        <li><a href="#home">Inicio</a></li>
-                        <li><a href="#aboutMe">Sobre mi</a></li>
-                        <li><a href="#project">Proyectos</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <!-- Separador -->
+    <div class="separator"></div>
 
-            <!-- Boton para descargar CV -->
-            <div class="download-cv">
-                <a href="#">
-                    <button class="btn-cv-s">Resumen</button>
-                </a>
-            </div>
-        </header>
+    <!-- Sección del "About Me" -->
+    <section class="sec-about-me" id="aboutMe">
+        <h2 class="about-title">About Me</h2>
+        <p class="about-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nam modi error, rerum dolorem animi, sequi
+            obcaecati commodi sint nihil maxime perspiciatis, officia exercitationem quibusdam reiciendis accusamus
+            debitis nostrum illum.
+        </p>
+        <p class="about-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nam modi error, rerum dolorem animi, sequi
+            obcaecati commodi sint nihil maxime perspiciatis, officia exercitationem quibusdam reiciendis accusamus
+            debitis nostrum illum.
+        </p>
+    </section>
 
-        <!-- Sección del "Home" -->
-        <section class="sec-home">
-            <!-- Columna 1 -->
-            <div class="home-cta">
-                <!-- Texto -->
-                <div class="cta-text">
-                    <span class="writting">Hola! Mi nombre es,</span>
+
+    <!-- Sección de "Services"   -->
+    <section class="sec-services" id="services">
+        <h2 class="services-title">Services</h2>
+        <!-- Contenedor de tarjetas -->
+        <div class="services">
+            <!-- Tarjetas -->
+            <div class="card-services">
+                <!-- Icono -->
+                <div class="card-content">
+                    <div class="card-icon">
+                        <img src="./assets/img/icons/code.svg" alt="code">
+                    </div>
+                    <!-- Textos -->
+                    <div class="card-services-text">
+                        <h3 class="card-services-title">Web Development</h3>
+                        <p class="card-services-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                        </p>
+                    </div>
                 </div>
-                <h2 class="home-title h2">Moisés<br>Alvarenga</h2>
-                <p class="home-description">
-                    I'm a software engineer based on Paraguay. I love everything related to frontend such as css, javascript, a11y and also performance. I am focused on building deligthful user experiences with high-quality code.
-                </p>
+            </div>
+            <div class="card-services">
+                <!-- Icono -->
+                <div class="card-content">
+                    <div class="card-icon">
+                        <img src="./assets/img/icons/javascript.svg" alt="javascript">
+                    </div>
+                    <!-- Textos -->
+                    <div class="card-services-text">
+                        <h3 class="card-services-title">JavaScript Stack</h3>
+                        <p class="card-services-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-services">
+                <!-- Icono -->
+                <div class="card-content">
+                    <div class="card-icon">
+                        <img src="./assets/img/icons/git-repo.svg" alt="git">
+                    </div>
+                    <!-- Textos -->
+                    <div class="card-services-text">
+                        <h3 class="card-services-title">Version Control</h3>
+                        <p class="card-services-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjetas -->
+            <div class="card-services">
+                <!-- Icono -->
+                <div class="card-content">
+                    <div class="card-icon">
+                        <img src="./assets/img/icons/database.svg" alt="database.svg">
+                    </div>
+                    <!-- Textos -->
+                    <div class="card-services-text">
+                        <h3 class="card-services-title">Database</h3>
+                        <p class="card-services-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-services">
+                <!-- Icono -->
+                <div class="card-content">
+                    <div class="card-icon">
+                        <img src="./assets/img/icons/python.svg" alt="python.svg">
+                    </div>
+                    <!-- Textos -->
+                    <div class="card-services-text">
+                        <h3 class="card-services-title">Python</h3>
+                        <p class="card-services-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-services">
+                <!-- Icono -->
+                <div class="card-content">
+                    <div class="card-icon">
+                        <img src="./assets/img/icons/java.svg" alt="java.svg">
+                    </div>
+                    <!-- Textos -->
+                    <div class="card-services-text">
+                        <h3 class="card-services-title">Java</h3>
+                        <p class="card-services-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section class="sec-projects" id="project">
+        <h2 class="projects-title">Projsects</h2>
+        <p class="projects-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio cum odit delectus
+            aspernatur harum animi quaerat accusamus autem ex? Numquam</p>
+        <!-- Contenedor de proyectos -->
+        <div class="projects">
+            <!-- Cards de los proyectos -->
+            <div class="card-project">
+                <!-- Cover -->
+                <div class="card-project-img">
+                    <img src="./assets/img/projects/contactsApp.png" alt="contactsApp">
+                </div>
+                <!-- Contenido textual -->
+                <div class="card-project-content-text">
+                    <h3 class="card-project-title">Contacts App</h3>
+                    <p class="card-project-description">Es una aplicación web para guardar contactos utilizando
+                        técnologia de Frontend, Backend y Base de Datos</p>
+                </div>
                 <!-- Botones -->
-                <div class="lead-magnet align-items-center">
+                <div class="buttons-project">
                     <a href="#" target="_blank">
-                        <button class="btn-home-cv">Resumen
-                            <i class="bi bi-file-earmark-pdf-fill"></i>
+                        <button class="btn-home-cv">View Live
+                            <i class="bi bi-box-arrow-up-right"></i>
                         </button>
                     </a>
-                    
+
                     <a href="#" target="_blank">
-                        <button class="btn-home-git">Ir a GitHub
+                        <button class="btn-home-git">GitHub Repo
                             <i class="bi bi-github"></i>
                         </button>
                     </a>
                 </div>
             </div>
-            <!-- Columna 2 -->
-            <div class="home-img d-none d-md-block">
-                <img src="./assets/img/perfil.jpg" alt="perfil">
-            </div>
-        </section>
+            <div class="card-project">
+                <!-- Cover -->
+                <div class="card-project-img">
+                    <img src="./assets/img/projects/contactsApp.png" alt="contactsApp">
+                </div>
+                <!-- Contenido textual -->
+                <div class="card-project-content-text">
+                    <h3 class="card-project-title">Contacts App</h3>
+                    <p class="card-project-description">Es una aplicación web para guardar contactos utilizando
+                        técnologia de Frontend, Backend y Base de Datos</p>
+                </div>
+                <!-- Botones -->
+                <div class="buttons-project">
+                    <a href="#" target="_blank">
+                        <button class="btn-home-cv">View Live
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </button>
+                    </a>
 
-        <!-- Separador -->
-        <div class="separator"></div>
-
-        <!-- Sección del "About Me" -->
-        <section class="sec-about-me" id="aboutMe">
-            <h2 class="about-title">About Me</h2>
-            <p class="about-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nam modi error, rerum dolorem animi, sequi obcaecati commodi sint nihil maxime perspiciatis, officia exercitationem quibusdam reiciendis accusamus debitis nostrum illum.
-            </p>
-            <p class="about-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nam modi error, rerum dolorem animi, sequi obcaecati commodi sint nihil maxime perspiciatis, officia exercitationem quibusdam reiciendis accusamus debitis nostrum illum.
-            </p>
-        </section>
-
-
-        <!-- Sección de "Services"   -->
-        <section class="sec-services" id="services">
-            <h2 class="services-title">Services</h2>
-            <!-- Contenedor de tarjetas -->
-            <div class="services">
-                <!-- Tarjetas -->
-                <div class="card-services">
-                    <!-- Icono -->
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <img src="./assets/img/icons/code.svg" alt="code">
-                        </div>
-                        <!-- Textos -->
-                        <div class="card-services-text">
-                            <h3 class="card-services-title">Web Development</h3>
-                            <p class="card-services-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-services">
-                    <!-- Icono -->
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <img src="./assets/img/icons/javascript.svg" alt="javascript">
-                        </div>
-                        <!-- Textos -->
-                        <div class="card-services-text">
-                            <h3 class="card-services-title">JavaScript Stack</h3>
-                            <p class="card-services-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-services">
-                    <!-- Icono -->
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <img src="./assets/img/icons/git-repo.svg" alt="git">
-                        </div>
-                        <!-- Textos -->
-                        <div class="card-services-text">
-                            <h3 class="card-services-title">Version Control</h3>
-                            <p class="card-services-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tarjetas -->
-                <div class="card-services">
-                    <!-- Icono -->
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <img src="./assets/img/icons/database.svg" alt="database.svg">
-                        </div>
-                        <!-- Textos -->
-                        <div class="card-services-text">
-                            <h3 class="card-services-title">Database</h3>
-                            <p class="card-services-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-services">
-                    <!-- Icono -->
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <img src="./assets/img/icons/python.svg" alt="python.svg">
-                        </div>
-                        <!-- Textos -->
-                        <div class="card-services-text">
-                            <h3 class="card-services-title">Python</h3>
-                            <p class="card-services-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-services">
-                    <!-- Icono -->
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <img src="./assets/img/icons/java.svg" alt="java.svg">
-                        </div>
-                        <!-- Textos -->
-                        <div class="card-services-text">
-                            <h3 class="card-services-title">Java</h3>
-                            <p class="card-services-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-
-                
-            </div>
-        </section>
-
-        <!-- Sección de proyectos -->
-        <section class="sec-projects" id="project">
-            <h2 class="projects-title">Projsects</h2>
-            <p class="projects-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio cum odit delectus aspernatur harum animi quaerat accusamus autem ex? Numquam</p>
-            <!-- Contenedor de proyectos -->
-            <div class="projects">
-                <!-- Cards de los proyectos -->
-                <div class="card-project">
-                    <!-- Cover -->
-                    <div class="card-project-img">
-                        <img src="./assets/img/projects/contactsApp.png" alt="contactsApp">
-                    </div>
-                    <!-- Contenido textual -->
-                    <div class="card-project-content-text">
-                        <h3 class="card-project-title">Contacts App</h3>
-                        <p class="card-project-description">Es una aplicación web para guardar contactos utilizando técnologia de Frontend, Backend y Base de Datos</p>
-                    </div>
-                    <!-- Botones -->
-                    <div class="buttons-project">
-                        <a href="#" target="_blank">
-                            <button class="btn-home-cv">View Live
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </button>
-                        </a>
-                        
-                        <a href="#" target="_blank">
-                            <button class="btn-home-git">GitHub Repo
-                                <i class="bi bi-github"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-project">
-                    <!-- Cover -->
-                    <div class="card-project-img">
-                        <img src="./assets/img/projects/contactsApp.png" alt="contactsApp">
-                    </div>
-                    <!-- Contenido textual -->
-                    <div class="card-project-content-text">
-                        <h3 class="card-project-title">Contacts App</h3>
-                        <p class="card-project-description">Es una aplicación web para guardar contactos utilizando técnologia de Frontend, Backend y Base de Datos</p>
-                    </div>
-                    <!-- Botones -->
-                    <div class="buttons-project">
-                        <a href="#" target="_blank">
-                            <button class="btn-home-cv">View Live
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </button>
-                        </a>
-                        
-                        <a href="#" target="_blank">
-                            <button class="btn-home-git">GitHub Repo
-                                <i class="bi bi-github"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-project">
-                    <!-- Cover -->
-                    <div class="card-project-img">
-                        <img src="./assets/img/projects/contactsApp.png" alt="contactsApp">
-                    </div>
-                    <!-- Contenido textual -->
-                    <div class="card-project-content-text">
-                        <h3 class="card-project-title">Contacts App</h3>
-                        <p class="card-project-description">Es una aplicación web para guardar contactos utilizando técnologia de Frontend, Backend y Base de Datos</p>
-                    </div>
-                    <!-- Botones -->
-                    <div class="buttons-project">
-                        <a href="#" target="_blank">
-                            <button class="btn-home-cv">View Live
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </button>
-                        </a>
-                        
-                        <a href="#" target="_blank">
-                            <button class="btn-home-git">GitHub Repo
-                                <i class="bi bi-github"></i>
-                            </button>
-                        </a>
-                    </div>
+                    <a href="#" target="_blank">
+                        <button class="btn-home-git">GitHub Repo
+                            <i class="bi bi-github"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
-        </section>
-
-        <!-- Sección de contacto -->
-        <section class="sec-contact" id="contact">
-            <div class="contact">
-                <!-- Primer Grid -->
-                <div class="min-sec-contact-1">
-                    <h2 class="contact-title">Contacto</h2>
-                    <div class="contact-details">
-                        <div class="contact-details-group">
-                            <p class="contact-label">Dirección:</p>
-                            <p class="contact-text">Montevideo, Uruguay</p>
-                        </div>
-                        <div class="contact-details-group">
-                            <p class="contact-label">Email:</p>
-                            <p class="contact-text">yoelvismulen@gmail.com</p>
-                        </div>
-                        <div class="contact-details-group">
-                            <p class="contact-text">Deje su mensaje y con gusto le responderé</p>
-                        </div>
-                    </div>
+            <div class="card-project">
+                <!-- Cover -->
+                <div class="card-project-img">
+                    <img src="./assets/img/projects/contactsApp.png" alt="contactsApp">
                 </div>
-
-                <!-- Segundo Grid -->
-                <div class="min-sec-contact-2">
-                    <!-- Navegación de redes sociales -->
-                    <nav class="social">
-                        <ul class="social-list">
-                            <li>
-                                <a href="https://twitter.com/ymulenll">
-                                    <img src="img/social/twitter.svg" alt="twitter profile" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/yoelvism" class="social-link"
-                                    ><img src="img/social/youtube.svg" alt="youtube profile"
-                                /></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/ymulenll" class="social-link">
-                                    <img src="img/social/github.svg" alt="github profile" />
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.linkedin.com/in/yoelvismulen"
-                                    class="social-link"
-                                >
-                                    <img src="img/social/linkedin.svg" alt="linkedin profile" />
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                <!-- Contenido textual -->
+                <div class="card-project-content-text">
+                    <h3 class="card-project-title">Contacts App</h3>
+                    <p class="card-project-description">Es una aplicación web para guardar contactos utilizando
+                        técnologia de Frontend, Backend y Base de Datos</p>
                 </div>
+                <!-- Botones -->
+                <div class="buttons-project">
+                    <a href="#" target="_blank">
+                        <button class="btn-home-cv">View Live
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </button>
+                    </a>
 
-                <!-- Tercer grid -->
-                <div class="min-sec-contact-3"> 
-                    <!-- Formulario -->
-                    <form class="contact-form">
-                        <div class="contact-form-group">
-                            <label for="name">Nombre</label>
-                            <input required type="text" name="name" id="name" />
-                        </div>
-                        <div class="contact-form-group">
-                            <label for="email">Email</label>
-                            <input required type="email" name="email" id="email" />
-                        </div>
-                        <div class="contact-form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea required name="message" id="message" rows="6"></textarea>
-                        </div>
-                        <button type="submit" class="contact-form-submit">Enviar</button>
-                    </form>
+                    <a href="#" target="_blank">
+                        <button class="btn-home-git">GitHub Repo
+                            <i class="bi bi-github"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
-        </section>
-        <!-- Scripts -->
-        
-    </body>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="sec-contact" id="contact">
+        <div class="contact">
+            <!-- Seccion de enviar correo -->
+            <div class="contact-der">
+                <h2>Contact Me</h2>
+                <p>Feel free to get in touch, If you have any suggestions or any oppurtunities please Email me and I'll
+                    get back to you soon</p>
+                <a href="mailto:oscar.moises350@gmail.com">Email Me</a>
+            </div>
+            <!-- Links de redes sociales -->
+            <div class="contact-izq">
+                <p class="contact--links">Puedes encontrarme en:</p>
+                <ul class="links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/moisesalvarenga19/" target="_blank">LinkedIn
+                            <img src="./assets/img/icons/linkedin.svg" alt="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/moises35" target="_blank">Github
+                            <img src="./assets/img/icons/github.svg" alt="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/soumya_banerjee_/" target="_blank">Instagram
+                            <img src="./assets/img/icons/instagram.svg" alt="icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <p>Grcais por ver mi trabajo</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="./js/loader.js"></script>
+</body>
+
 </html>
