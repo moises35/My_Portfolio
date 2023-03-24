@@ -174,7 +174,9 @@ body {
     .home-img img {
         flex: 1;
         display: flex;
-        width: 20rem;
+        width: 320px;
+        height: 320px;
+        outline: 2px solid white;
         border-radius: 50%;
     }
 }
