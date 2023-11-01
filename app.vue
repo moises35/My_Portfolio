@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="div">
     <p class="jo">
       Hola
     </p>
@@ -7,7 +7,7 @@
 </template>
 
 <style lang="scss">
-div {
+.div {
   .jo {
     color: red;
   }

@@ -17,13 +17,13 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [
-      svgLoader({})
-    ]
+      svgLoader({}),
+    ],
   },
   css: [
     '@/assets/scss/global.scss',
     '@/assets/scss/variables.scss',
     '@/assets/scss/fonts.scss',
   ],
-  devtools: { enabled: true }
+  devtools: { enabled: true },
 })
