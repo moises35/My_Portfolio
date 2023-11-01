@@ -1,3 +1,4 @@
+import svgLoader from 'vite-svg-loader'
 
 export default defineNuxtConfig({
   app: {
@@ -13,6 +14,11 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       ],
     },
+  },
+  vite: {
+    plugins: [
+      svgLoader({})
+    ]
   },
   css: [
     '@/assets/scss/global.scss',
