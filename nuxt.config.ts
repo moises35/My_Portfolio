@@ -25,5 +25,17 @@ export default defineNuxtConfig({
     '@/assets/scss/variables.scss',
     '@/assets/scss/fonts.scss',
   ],
+  modules: [
+    '@nuxtjs/i18n',
+  ],
+  i18n: {
+    locales: [
+      { code: 'es', file: 'es-ES.json' },
+      { code: 'en', file: 'en-US.json' },
+    ],
+    defaultLocale: 'es',
+    lazy: true,
+    langDir: 'languages/',
+  },
   devtools: { enabled: true },
 })
