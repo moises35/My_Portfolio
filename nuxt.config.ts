@@ -27,6 +27,7 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@nuxtjs/i18n',
+    '@nuxtjs/color-mode',
   ],
   i18n: {
     locales: [
@@ -36,6 +37,10 @@ export default defineNuxtConfig({
     defaultLocale: 'es',
     lazy: true,
     langDir: 'languages/',
+  },
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
   },
   devtools: { enabled: true },
 })
