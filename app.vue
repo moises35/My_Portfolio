@@ -14,9 +14,6 @@
 
     <h1>Color mode: {{ $colorMode.value }}</h1>
     <select v-model="$colorMode.preference">
-      <option value="system">
-        System
-      </option>
       <option value="light">
         Light
       </option>
@@ -36,6 +33,16 @@ console.log(colorMode.preference)
 </script>
 
 <style lang="scss">
+:root {
+  --bg-color: #091a28;
+  --text-color: #ebf4f1;
+}
+
+.light-mode {
+  --bg-color: #fff;
+  --text-color: rgb(0 0 0 / 80%);
+}
+
 .div {
   .jo {
     color: red;
@@ -43,12 +50,14 @@ console.log(colorMode.preference)
 }
 
 body {
-  color: rgb(0 0 0 / 80%);
-  background-color: #fff;
+  // color: #ebf4f1;
+  // background-color: #091a28;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
-.dark-mode body {
-  color: #ebf4f1;
-  background-color: #091a28;
-}
+// .light-mode body {
+//   color: rgb(0 0 0 / 80%);
+//   background-color: #fff;
+// }
 </style>
