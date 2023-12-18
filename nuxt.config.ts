@@ -35,7 +35,8 @@ export default defineNuxtConfig({
       { code: 'en', file: 'en-US.json' },
     ],
     defaultLocale: 'es',
-    lazy: true,
+    detectBrowserLanguage: false,
+    lazy: false,
     langDir: 'languages/',
   },
   colorMode: {
