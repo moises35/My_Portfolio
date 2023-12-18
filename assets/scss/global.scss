@@ -32,22 +32,6 @@ html {
       }
     }
 
-    .only-mobile {
-      display: none;
-
-      @media only screen and (max-width: 992px) {
-        display: block;
-      }
-    }
-
-    .only-desktop {
-      display: block;
-
-      @media only screen and (max-width: 992px) {
-        display: none;
-      }
-    }
-
     b,
     strong {
       font-weight: 600;
@@ -69,5 +53,21 @@ html {
         list-style: none;
       }
     }
+  }
+}
+
+.only-mobile {
+  display: none;
+
+  @media only screen and (max-width: 992px) {
+    display: block;
+  }
+}
+
+.only-desktop {
+  display: block;
+
+  @media only screen and (max-width: 992px) {
+    display: none;
   }
 }
