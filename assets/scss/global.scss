@@ -57,17 +57,17 @@ html {
 }
 
 .only-mobile {
-  display: none;
-
-  @media only screen and (max-width: 992px) {
-    display: block;
+  display: block;
+  
+  @media only screen and (min-width: 992px) {
+    display: none;
   }
 }
 
 .only-desktop {
-  display: block;
-
-  @media only screen and (max-width: 992px) {
-    display: none;
+  display: none;
+  
+  @media only screen and (min-width: 992px) {
+    display: block;
   }
 }
