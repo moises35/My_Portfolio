@@ -87,6 +87,16 @@ defineProps({
     scale: 1.2;
   }
 
+  @media screen and (min-width: 900px) {
+    gap: 10px;
+    font-size: 16px;
+
+    .icon {
+      margin-top: 3px;
+      scale: 1.3;
+    }
+  }
+
   &.secondary {
     color: var(--btn-text-secondary-color);
     background-color: transparent;
