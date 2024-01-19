@@ -2,13 +2,16 @@
   // colors
   --text-color: #F5F5F5;
   --primary-color: #00ADB5;
+  --primary-color-hover: #00acb5db;
   --secondary-color: #215E62;
   --bg-primary: #1A1A29;
   --bg-secondary: #181824;
   --gray: #BDBDBD;
+  --btn-text-primary-color: #F5F5F5;
+  --btn-text-secondary-color: #F5F5F5;
 
   // font
-  --big-title: 32px;
+  --big-title: 34px;
   --title: 24px;
   --body: 16px;
   --medium-text: 20px;
@@ -32,7 +35,9 @@
   --text-color: #333;
   --primary-color: #00ADB5;
   --secondary-color: #215E62;
-  --bg-primary: #F5F5F5;
+  --bg-primary: #e1e1e1;
   --gray: #BDBDBD;
   --bg-secondary: #e9e9e9;
+  --btn-text-primary-color: #e9e9e9;
+  --btn-text-secondary-color: #333;
 }
