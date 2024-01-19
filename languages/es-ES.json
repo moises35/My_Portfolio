@@ -4,5 +4,14 @@
     "aboutMe": "Sobre mi",
     "projects": "Proyectos",
     "contact": "Contacto"
+  },
+  "home": {
+    "greeting": "¡Hola! Mi nombre es,",
+    "name": "Moisés Alvarenga",
+    "description": "Soy un estudiante de la carrera de Ingeniería en Informática de Paraguay. Me encanta todo lo relacionado a técnologias de la web, tanto Frontend como Backend. Estoy enfocado en construir aplicaciones con buena experiencia de usuario y código de alta calidad.",
+    "cta": {
+      "cv": "CV",
+      "contact": "Contáctame"
+    }
   }
 }

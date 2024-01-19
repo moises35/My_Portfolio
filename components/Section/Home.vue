@@ -2,26 +2,24 @@
   <section class="home">
     <div class="presentation">
       <p class="greeting">
-        ¡Hola! Mi nombre es,
+        {{ $t(`${T}.greeting`) }}
       </p>
       <h1 class="name">
-        Moisés Alvarenga
+        {{ $t(`${T}.name`) }}
       </h1>
       <p class="description">
-        Soy un estudiante de la carrera de Ingeniería en Informática de Paraguay.
-        Me encanta todo lo relacionado a técnologias de la web, tanto Frontend como Backend.
-        Estoy enfocado en construir aplicaciones con buena experiencia de usuario y código de alta calidad.
+        {{ $t(`${T}.description`) }}
       </p>
       <div class="cta-container">
         <AtomBtn
           to="/"
-          text="CV"
+          :text="$t(`${T}.cta.cv`)"
           :icon="SVGPdf"
           :is-external="true"
         />
         <AtomBtn
           to="/"
-          text="Contáctame"
+          :text="$t(`${T}.cta.contact`)"
           :icon="SVGChat"
           color="secondary"
         />
@@ -37,6 +35,7 @@
 import SVGPdf from '@/assets/svg/pdf.svg'
 import SVGChat from '@/assets/svg/chat.svg'
 
+const T = 'home'
 </script>
 
 <style lang="scss">
