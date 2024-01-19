@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="only-desktop profile-container">
-      <!-- <img src="" alt="Moisés Alvarenga"> -->
+      <img src="/img/perfil.jpeg" alt="Moisés Alvarenga">
     </div>
   </section>
 </template>
@@ -43,9 +43,7 @@ import SVGChat from '@/assets/svg/chat.svg'
 section.home {
   display: flex;
   align-items: center;
-  height: 80vh;
-
-  // background-color: rgb(255 99 71 / 9.3%);
+  height: 78vh;
 
   .presentation {
     .greeting {
@@ -67,6 +65,34 @@ section.home {
     .cta-container {
       display: flex;
       gap: 22px;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    justify-content: space-between;
+    height: 76vh;
+
+    .presentation {
+      .greeting {
+        font-size: 24px;
+      }
+
+      .description {
+        max-width: 550px;
+      }
+
+      .cta-container {
+        gap: 28px;
+      }
+    }
+
+    .profile-container {
+      img {
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        outline: 2px solid white;
+      }
     }
   }
 }
