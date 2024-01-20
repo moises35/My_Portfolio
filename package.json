@@ -1,6 +1,7 @@
 {
   "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -35,7 +36,6 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@growthbunker/vuetimeline": "^0.1.17",
     "sass": "^1.69.5",
     "vue-rough-notation": "^1.0.4"
   }
