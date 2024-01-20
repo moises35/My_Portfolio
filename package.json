@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.0.0-rc.3",
     "@nuxtjs/color-mode": "^3.3.2",
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
@@ -34,6 +35,8 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "sass": "^1.69.5"
+    "@growthbunker/vuetimeline": "^0.1.17",
+    "sass": "^1.69.5",
+    "vue-rough-notation": "^1.0.4"
   }
 }

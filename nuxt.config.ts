@@ -28,6 +28,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
+    '@nuxt/image',
   ],
   i18n: {
     locales: [
@@ -42,6 +43,9 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'dark',
     fallback: 'dark',
+  },
+  image: {
+    domains: [ 'localhost:3000', 'livieresg.com.py', 'pageName.netlify.app' ],
   },
   devtools: { enabled: true },
 })
