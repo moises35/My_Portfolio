@@ -32,6 +32,15 @@ html {
       }
     }
 
+    section {
+      .section-title {
+        margin-bottom: 1rem;
+        font-size: var(--title);
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+    }
+
     b,
     strong {
       font-weight: 600;

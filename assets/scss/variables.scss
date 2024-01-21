@@ -13,7 +13,7 @@
   // font
   --big-title: 34px;
   --title: 24px;
-  --body: 16px;
+  --body: 14px;
   --medium-text: 20px;
 
   // spacing
@@ -23,7 +23,7 @@
   --layout-padding-desktop: 10%;
   --layout-max-width: 1920px;
 
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 992px) {
     --big-title: 52px;
     --title: 32px;
     --body: 18px;
