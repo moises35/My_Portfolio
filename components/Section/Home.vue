@@ -14,13 +14,13 @@
         <AtomBtn
           to="/"
           :text="$t(`${T}.cta.cv`)"
-          :icon="SVGPdf"
+          :icon="{'icon': SVGPdf}"
           :is-external="true"
         />
         <AtomBtn
           to="/"
           :text="$t(`${T}.cta.contact`)"
-          :icon="SVGChat"
+          :icon="{'icon': SVGChat}"
           color="secondary"
         />
       </div>
@@ -28,6 +28,7 @@
     <div class="only-desktop profile-container">
       <img src="/img/perfil.jpeg" alt="Moisés Alvarenga">
     </div>
+    <AtomMouseScroll />
   </section>
 </template>
 
@@ -40,9 +41,10 @@ const T = 'home'
 
 <style lang="scss">
 section.home {
+  position: relative;
   display: flex;
   align-items: center;
-  height: 78vh;
+  height: 100vh;
 
   .presentation {
     .greeting {
@@ -67,9 +69,8 @@ section.home {
     }
   }
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 992px) {
     justify-content: space-between;
-    height: 76vh;
 
     .presentation {
       .greeting {
