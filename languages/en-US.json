@@ -13,5 +13,16 @@
       "cv": "CV",
       "contact": "Contáctame"
     }
+  },
+  "aboutMe": {
+    "title": "About me",
+    "description": "Soy un estudiante de la carrera de Ingeniería en Informática de Paraguay. Me encanta todo lo relacionado a técnologias de la web, tanto Frontend como Backend. Estoy enfocado en construir aplicaciones con buena experiencia de usuario y código de alta calidad.",
+    "description2": "Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "other": "Otras"
   }
 }
