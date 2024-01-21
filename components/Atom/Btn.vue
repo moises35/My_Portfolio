@@ -9,7 +9,7 @@
     ]"
   >
     <template v-if="icon">
-      <component :is="icon" class="icon" />
+      <component :is="icon.icon" class="icon" />
     </template>
     {{ text }}
   </NuxtLink>
@@ -24,7 +24,7 @@
     ]"
   >
     <template v-if="icon">
-      <component :is="icon" class="icon" />
+      <component :is="icon.icon" class="icon" />
     </template>
     {{ text }}
   </a>
@@ -87,7 +87,7 @@ defineProps({
     scale: 1.2;
   }
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 992px) {
     gap: 10px;
     font-size: 16px;
 
