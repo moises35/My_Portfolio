@@ -1,7 +1,6 @@
 {
   "name": "nuxt-app",
   "private": true,
-  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -37,6 +36,10 @@
   },
   "dependencies": {
     "sass": "^1.69.5",
-    "vue-rough-notation": "^1.0.4"
+    "vue-rough-notation": "^1.0.4",
+    "vue-waypoint": "^4.3.0"
+  },
+  "resolutions": {
+    "string-width": "4.2.3"
   }
 }
