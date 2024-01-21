@@ -25,6 +25,9 @@ const colorMode = useColorMode()
 
 <style lang="scss">
 .header {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
   width: 100%;
   background-color: var(--bg-secondary);
 
