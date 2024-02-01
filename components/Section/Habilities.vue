@@ -75,13 +75,11 @@
 </template>
 
 <script setup lang="ts">
-import SVGFrontend from '@/assets/svg/habilities/frontend.svg'
-import SVGBackend from '@/assets/svg/habilities/backend.svg'
-import SVGMobile from '@/assets/svg/habilities/mobile.svg'
-import SVGOthers from '@/assets/svg/habilities/tools.svg'
-import { frontend, backend, mobile, others } from '@/assets/data/habilities'
-
-const visible = ref(true)
+import SVGFrontend from '@/assets/svg/skills/frontend.svg'
+import SVGBackend from '@/assets/svg/skills/backend.svg'
+import SVGMobile from '@/assets/svg/skills/mobile.svg'
+import SVGOthers from '@/assets/svg/skills/tools.svg'
+import { frontend, backend, mobile, others } from '@/assets/data/skills'
 
 </script>
 
@@ -89,16 +87,16 @@ const visible = ref(true)
 .tabs {
   position: relative;
   min-width: 240px;
+  max-width: 850px;
   min-height: 250px;
   padding: 20px 0;
+  margin: 0 auto;
   margin-top: 22px;
   background: var(--bg-color);
   border-radius: 5px;
 
   // box-shadow: 0 14px 28px rgb(29 255 33 / 25%), 0 10px 10px rgb(0 255 21 / 22%);
   // box-shadow: 0 0 5px var(--primary-color), 0 2px 9px var(--primary-color);
-
-  // transform: translateX(-50%);
 
   input[name="tab-control"] {
     display: none;
@@ -126,7 +124,6 @@ const visible = ref(true)
       text-align: center;
 
       label {
-        display: block;
         padding: 5px auto;
         overflow: hidden;
         color: #4d6768;
@@ -147,16 +144,17 @@ const visible = ref(true)
         }
 
         svg {
-          height: 1.2em;
+          height: 1.5em;
           vertical-align: bottom;
           transition: all 0.2s ease-in-out;
+          scale: 1.3;
 
           * {
             fill: #4d6768;
           }
         }
 
-        @media (max-width: 1000px) {
+        @media (max-width: 992px) {
           white-space: initial;
 
           br {
@@ -165,6 +163,7 @@ const visible = ref(true)
 
           svg {
             height: 1.5em;
+            scale: 1;
           }
         }
 
@@ -234,8 +233,12 @@ const visible = ref(true)
       .skill-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 32px;
         justify-content: space-around;
+
+        @media screen and (min-width: 992px) {
+          gap:62px;
+        }
       }
     }
 
