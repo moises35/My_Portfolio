@@ -1,6 +1,7 @@
 {
   "menu": {
     "home": "Inicio",
+    "experience": "Experiencia",
     "aboutMe": "Sobre mi",
     "projects": "Proyectos",
     "contact": "Contacto"
@@ -18,5 +19,35 @@
     "title": "Sobre mi",
     "description": "Soy un estudiante de la carrera de Ingeniería en Informática de Paraguay. Me encanta todo lo relacionado a técnologias de la web, tanto Frontend como Backend. Estoy enfocado en construir aplicaciones con buena experiencia de usuario y código de alta calidad.",
     "description2": "Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "other": "Otras"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "estudioObliquo": {
+      "enterprise": "Estudio Obliquo",
+      "date": "Mayo 2023 - Actualidad",
+      "position": "Desarrollador Web",
+      "description": "Desarrollador web en Estudio Obliquo"
+    },
+    "codingDojo": {
+      "enterprise": "Coding Dojo",
+      "date": "Febrero 2020 - Actualidad",
+      "position": "Desarrollador MERN",
+      "description": "Estudie el stack mern"
+    },
+    "fpuna": {
+      "enterprise": "Facultad Politécnica - UNA",
+      "date": "Febrero 2020 - Actualidad",
+      "position": "Ingeniería en Informática",
+      "description": "Estudiante de ingenieria em eefas"
+    }
+  },
+  "projects": {
+    "coinbase": "Clone de la pagina principal de coinbase"
   }
 }

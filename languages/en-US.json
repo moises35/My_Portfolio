@@ -1,6 +1,7 @@
 {
   "menu": {
     "home": "Home",
+    "experience": "Experience",
     "aboutMe": "About me",
     "projects": "Projects",
     "contact": "Contact"
@@ -24,5 +25,29 @@
     "frontend": "Frontend",
     "backend": "Backend",
     "other": "Otras"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "estudioObliquo": {
+      "enterprise": "Estudio Obliquo",
+      "date": "Mayo 2023 - Actualidad",
+      "position": "Desarrollador Web",
+      "description": "Desarrollador web en Estudio Obliquo"
+    },
+    "codingDojo": {
+      "enterprise": "Coding Dojo",
+      "date": "Febrero 2020 - Actualidad",
+      "position": "Desarrollador MERN",
+      "description": "Estudie el stack mern"
+    },
+    "fpuna": {
+      "enterprise": "Facultad Politécnica - UNA",
+      "date": "Febrero 2020 - Actualidad",
+      "position": "Ingeniería en Informática",
+      "description": "Estudiante de ingenieria em eefas"
+    }
+  },
+  "projects": {
+    "coinbase": "Clone de la pagina principal de coinbase"
   }
 }
