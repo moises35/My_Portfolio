@@ -3,7 +3,7 @@
     <div class="container layout-wrapper">
       <div class="logo">
         <NuxtLink to="/">
-          <SVGLogo v-if="colorMode.preference === 'dark'" />
+          <SVGLogo v-if="colorMode.value === 'dark'" />
           <SVGLogoLight v-else />
         </NuxtLink>
       </div>
