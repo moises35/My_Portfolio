@@ -12,13 +12,13 @@
       </p>
       <div class="cta-container">
         <AtomBtn
-          to="/"
+          to="/pdf/CV_MoisesAlvarenga.pdf"
           :text="$t(`${T}.cta.cv`)"
           :icon="{'icon': SVGPdf}"
           :is-external="true"
         />
         <AtomBtn
-          to="/"
+          to="#contacts"
           :text="$t(`${T}.cta.contact`)"
           :icon="{'icon': SVGChat}"
           color="secondary"
@@ -49,9 +49,29 @@ section.home {
   .presentation {
     .greeting {
       margin-bottom: 6px;
-      font-size: 20px;
+      overflow: hidden;
+      font-size: var(--medium-text);
       font-weight: 600;
       color: var(--primary-color);
+      white-space: nowrap;
+
+      &.animated-typing {
+        width: 16.5ch;
+        border-right: 4px solid;
+        animation: typing 2s steps(17), blink .5s infinite step-end alternate;
+      }
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
     }
 
     .name {
@@ -94,6 +114,10 @@ section.home {
         outline: 2px solid white;
       }
     }
+  }
+
+  @media screen and (min-width: 1863px) {
+    height: 965px;
   }
 }
 </style>

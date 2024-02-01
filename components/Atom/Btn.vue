@@ -5,6 +5,7 @@
     :class="[
       'btn',
       { 'inverse': iconPosition === 'right' },
+      { 'little': size === 'sm'},
       { 'secondary': color === 'secondary' },
     ]"
   >
@@ -21,6 +22,7 @@
       'btn',
       { 'inverse': iconPosition === 'right' },
       { 'secondary': color === 'secondary' },
+      { 'little': size === 'sm'},
     ]"
   >
     <template v-if="icon">
@@ -57,6 +59,10 @@ defineProps({
     type: String,
     default: 'primary',
   },
+  size: {
+    type: String,
+    default: 'md',
+  },
 })
 </script>
 
@@ -65,7 +71,7 @@ defineProps({
   display: flex;
   gap: 8px;
   padding: 12px 18px;
-  font-size: 14px;
+  font-size: var(--btn-text);
   font-weight: 500;
   color: var(--btn-text-primary-color);
   background-color: var(--primary-color);
@@ -73,9 +79,9 @@ defineProps({
   transition: background-color .3s;
 
   &:hover {
+    color: var(--btn-text-primary-color);
     cursor: pointer;
     background-color: var(--primary-color-hover);
-
   }
 
   &.inverse {
@@ -89,7 +95,6 @@ defineProps({
 
   @media screen and (min-width: 992px) {
     gap: 10px;
-    font-size: 16px;
 
     .icon {
       margin-top: 3px;
@@ -103,8 +108,14 @@ defineProps({
     border: 1px solid var(--primary-color);
 
     &:hover {
+      color: var(--btn-text-primary-color);
       background-color: var(--primary-color);
     }
+  }
+
+  &.little {
+    padding: 11px 14px;
+    font-size: var(--sm-text);
   }
 }
 </style>

@@ -21,7 +21,7 @@
   width: 25px;
   height: 40px;
   overflow: hidden;
-  border: 2px solid #eee;
+  border: 2px solid var(--text-color);
   border-radius: 6px;
 
   &::before {
@@ -31,7 +31,7 @@
     width: 5px;
     height: 5px;
     content: '';
-    background-color: #eee;
+    background-color: var(--text-color);
     border-radius: 50%;
     opacity: 1;
     transform: translateX(-50%);

@@ -6,7 +6,7 @@
     <span class="sun">
       <SVGSun />
     </span>
-    <input type="checkbox" class="input" :checked="colorMode.preference === 'light'" @change="toggleColorMode">
+    <input type="checkbox" class="input" :checked="colorActual === 'light'" @change="toggleColorMode">
     <span class="slider" />
   </label>
 </template>
@@ -16,10 +16,15 @@ import SVGSun from '@/assets/svg/sun.svg'
 import SVGMoon from '@/assets/svg/moon.svg'
 
 const colorMode = useColorMode()
+const colorActual = ref('')
 
 const toggleColorMode = () => {
   colorMode.preference = colorMode.preference === 'light' ? 'dark' : 'light'
 }
+
+onMounted(() => {
+  colorActual.value = colorMode.preference
+})
 </script>
 
 <style lang="scss">
