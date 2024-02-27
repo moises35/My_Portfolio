@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  .max-limit {
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  body {
+    font-family: Poppins, sans-serif;
+    font-size: var(--body);
+    color: var(--text-color);
+    background-color: var(--bg-primary);
+
+    .layout-wrapper {
+      max-width: var(--layout-max-width);
+      padding-right: var(--layout-padding-mobile);
+      padding-left: var(--layout-padding-mobile);
+      margin: 0 auto;
+      overflow: hidden;
+
+      @media only screen and (min-width: 992px) {
+        padding-right: var(--layout-padding-desktop);
+        padding-left: var(--layout-padding-desktop);
+      }
+    }
+
+    section {
+      .section-title {
+        margin-bottom: 1rem;
+        font-size: var(--title);
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+    }
+
+    b,
+    strong {
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--text-color);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--text-color);
+      }
+    }
+
+    ul,
+    ol {
+      li {
+        text-decoration: none;
+        list-style: none;
+      }
+    }
+
+    svg.current-color * {
+      fill: var(--text-color-2);
+    }
+  }
+}
+
+.only-mobile {
+  display: block;
+  
+  @media only screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
+.only-desktop {
+  display: none;
+  
+  @media only screen and (min-width: 992px) {
+    display: block;
+  }
+}
+
+html.light-mode {
+  body { 
+    background-image: radial-gradient(ellipse 80% 80% at 0% 0%,rgb(0 255 142 / 6%),hsl(1deg 0% 100% / 0%));
+  }
+
+  // p, span.date {
+  //   font-weight: 500;
+  // }
+
+  .projects-container .card  .cover {
+    border: 1px solid #e3e3e3;
+  }
+
+  // .projects-container > div.card {
+  //   background-image: linear-gradient(rgb(241 241 241) 0%, rgba(243, 243, 243, 0.64) 50%);
+  // }
+  
+  footer.footer {
+    border-top-color: #2a3a4c54;
+  }
+
+  .item-timeline > .timeline-left > .date {
+    color: var(--text-color)
+  }
+
+  section.home .profile-container img {
+    outline-color: #cfcfcf52;
+  }
+}
