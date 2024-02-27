@@ -6,9 +6,9 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'es',
       },
-      title: 'Moisés Alvarenga | My Portfolio',
+      title: 'Moisés Alvarenga | Portfolio | FullStack Developer',
       meta: [
-        { name: 'title', content: 'Moisés Alvarenga | My Portfolio' },
+        { name: 'title', content: 'Moisés Alvarenga | Portfolio' },
         { charset: 'utf-8' },
       ],
       link: [
@@ -57,7 +57,7 @@ export default defineNuxtConfig({
     fallback: 'dark',
   },
   image: {
-    domains: [ 'localhost:3000', 'livieresg.com.py', 'pageName.netlify.app' ],
+    domains: [ 'localhost:3000', 'moises.com.py', 'pageName.netlify.app' ],
     screens: {
       xs: 370,
       sm: 640,

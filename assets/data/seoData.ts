@@ -1,12 +1,13 @@
 /* eslint-disable max-len */
 
-const titlePrefix = 'Moisés Alvarenga'
-const urlPrefix = 'https://estudioobliquo.com'
+const titlePrefix = 'Moisés Alvarenga | Portfolio'
+const urlPrefix = 'https://abc.com'
 const topicPrefix = 'Moisés Alvarenga, Desarrollador Web FullStack, Desarrollador Mobile, Ingeniero en Informática, Paraguay'
 
 const defaultMeta = [
   { property: 'og:type', content: 'website' },
-  { property: 'og:image', content: 'https://delfinazelaschi.com/img/og-image.png' },
+  { property: 'og:url', content: 'https://www.abc.com.py/' },
+  { property: 'og:image', content: 'https://abc.com/img/og-image.png' },
   { name: 'author', content: 'Moisés Alvarenga' },
   { name: 'copyright', content: 'Moisés Alvarenga' },
 ]
@@ -33,11 +34,11 @@ export const seoData: Record<string, any> = {
   '/': {
     es: enrichHead({
       url: '/',
-      description: 'En Estudio Obliquo diseñamos y desarrollamos páginas web y sistemas desde Asunción, Paraguay. Impulsado por el desafío creativo, nuestro estudio ofrece soluciones digitales diseñadas a medida.',
+      description: '¡Hola! Mi nombre es Moisés Alvarenga y soy de Paraguay. Con 4+ años de experiencia como Desarrollador Web FullStack y Desarrollador Mobile. Les presento mi portfolio en donde resumo mi experiencia.',
     }),
     en: enrichHead({
       url: '/',
-      description: 'At Estudio Obliquo we design and develop web pages and systems from Asunción, Paraguay. Driven by the creative challenge, our studio offers custom-designed digital solutions.',
+      description: 'Hello! My name is Moisés Alvarenga and I am from Paraguay. With 4+ years of experience as a FullStack Web Developer and Mobile Developer. I present to you my portfolio where I summarize my experience.',
     }),
   },
 }

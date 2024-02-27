@@ -2,6 +2,7 @@
   <a
     :href="link"
     class="social-icons"
+    rel="noopener"
     :target="external ? '_blank' : '_self'"
     :aria-label="title"
   >

@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" target="_blank" class="social-network-badge">
+  <a :href="link" rel="noopener" target="_blank" class="social-network-badge">
     {{ text }}
     <component
       :is="icon.icon"

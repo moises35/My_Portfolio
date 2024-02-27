@@ -18,6 +18,7 @@
   <a
     v-else
     :href="to"
+    rel="noopener"
     target="_blank"
     :class="[
       'btn',
