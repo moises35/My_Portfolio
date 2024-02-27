@@ -57,7 +57,7 @@ export default defineNuxtConfig({
     fallback: 'dark',
   },
   image: {
-    domains: [ 'localhost:3000', 'moises.com.py', 'pageName.netlify.app' ],
+    domains: [ 'localhost:3000', 'moises35.vercel.app', 'my-portfolio-moises35.vercel.app' ],
     screens: {
       xs: 370,
       sm: 640,

@@ -1,13 +1,17 @@
 /* eslint-disable max-len */
 
 const titlePrefix = 'Moisés Alvarenga | Portfolio'
-const urlPrefix = 'https://abc.com'
+const urlPrefix = 'https://moises35.vercel.app/'
 const topicPrefix = 'Moisés Alvarenga, Desarrollador Web FullStack, Desarrollador Mobile, Ingeniero en Informática, Paraguay'
 
 const defaultMeta = [
   { property: 'og:type', content: 'website' },
-  { property: 'og:url', content: 'https://www.abc.com.py/' },
-  { property: 'og:image', content: 'https://abc.com/img/og-image.png' },
+  { property: 'og:url', content: 'https://moises35.vercel.app/' },
+  { property: 'og:image', content: 'https://moises35.vercel.app/og-image.png' },
+  { property: 'twitter:card', content: 'summary_large_image' },
+  { property: 'twitter:domain', content: 'moises35.vercel.app' },
+  { property: 'twitter:url', content: 'https://moises35.vercel.app/' },
+  { property: 'twitter:image', content: 'https://moises35.vercel.app/og-image.png' },
   { name: 'author', content: 'Moisés Alvarenga' },
   { name: 'copyright', content: 'Moisés Alvarenga' },
 ]
@@ -19,9 +23,11 @@ export function enrichHead (data) {
 
   result.title = title
   result.meta.push({ property: 'og:title', content: data.metaTitle || title })
+  result.meta.push({ property: 'twitter:title', content: data.metaTitle || title })
 
   result.meta.push({ hid: 'description', name: 'description', content: data.description })
   result.meta.push({ property: 'og:description', content: data.description })
+  result.meta.push({ property: 'twitter:description', content: data.description })
 
   result.meta.push({ property: 'og:url', content: urlPrefix + data.url })
 
