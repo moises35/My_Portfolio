@@ -20,7 +20,7 @@
     "title": "About Me",
     "description": "Hello!👋🏻 My name is Moisés Alvarenga and I'm from Paraguay. Currently, I'm in the final stage of my computer engineering education at the National University of Asunción. I'm passionate about all branches of computer science, although I'm primarily specialized in web and mobile development.",
     "description2": "years of experience in web development and 2 years in mobile applications, I love to stay updated with the latest technologies and trends to provide more effective solutions with better performance. I'm willing to learn new technologies, enjoy acquiring new knowledge, working in teams, and receiving feedback on my work as I consider it fundamental for my professional growth.",
-    "description3": "Among other things I enjoy doing is contributing to open-source projects, as I recently did with the <a href=\"https://svgl.vercel.app/\" rel=\"noopener\">SVGl</a> project. Outside of the professional realm, I'm passionate about music, traveling, and enjoying nature."
+    "description3": "Among other things I enjoy doing is contributing to open-source projects, as I recently did with the <a href=\"https://svgl.vercel.app/\" target=\"_blank\" rel=\"noopener\">SVGl</a> project. Outside of the professional realm, I'm passionate about music, traveling, and enjoying nature."
   },
   "skills": {
     "title": "Skills",
