@@ -28,9 +28,7 @@
           {{ enterprise }}
         </h3>
       </div>
-      <p class="description">
-        {{ description }}
-      </p>
+      <ul class="description" v-html="description" />
     </div>
   </article>
 </template>
@@ -92,9 +90,8 @@ defineProps({
       font-size: 14px;
       user-select: none;
       background-size: cover;
-      border: 3px solid var(--primary-color);
+      border: 3px solid var(--btn-primary-color);
       border-radius: 100%;
-      box-shadow: 0 1px 5px 0 #18191a;
       transform: translateX(-50%);
 
       svg {
@@ -107,7 +104,7 @@ defineProps({
       width: 1px;
       height: 100%;
       margin-top: 32px;
-      background-color: #313d4f;
+      background-color: var(--timeline-line);
     }
   }
 
@@ -131,11 +128,11 @@ defineProps({
           padding: 2px 12px;
           font-size: 12px;
           line-height: 22px;
+          color: var(--btn-text-primary-color);
           text-transform: uppercase;
-          background-color: var(--primary-color);
+          background-color: var(--btn-primary-color);
           border: 1px solid transparent;
-          border-radius: 100px;
-          box-shadow: 0 1px 5px 0 #18191a;
+          border-radius: 100px
         }
 
         .date {
@@ -155,7 +152,13 @@ defineProps({
       margin-left: 4px;
       font-size: 13px;
       line-height: 26px;
-      color: #a9c7df;
+      color: var(--timeline-description);
+
+      li {
+        span {
+          color: var(--primary-color);
+        }
+      }
     }
   }
 
@@ -164,7 +167,8 @@ defineProps({
       display: block;
       flex: 0 0 auto;
       width: 172px;
-      font-size: 16px;
+      margin-top: 6px;
+      font-size: 14px;
       color: #a9c7df;
       text-align: right;
     }

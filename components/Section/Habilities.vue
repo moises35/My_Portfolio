@@ -1,6 +1,6 @@
 <template>
   <section class="habilities">
-    <AtomTitle title="Habilidades" />
+    <AtomTitle :title="$t(`${T}.title`)" />
     <div class="tabs">
       <input id="tab1" type="radio" name="tab-control" checked>
       <input id="tab2" type="radio" name="tab-control">
@@ -8,27 +8,27 @@
       <input id="tab4" type="radio" name="tab-control">
       <ul>
         <li title="Frontend">
-          <label for="tab1" role="button">
+          <label for="tab1" aria-label="Frontend habilities">
             <SVGFrontend />
-            <br><span>Frontend</span>
+            <br><span>{{ $t(`${T}.frontend`) }}</span>
           </label>
         </li>
         <li title="Backend">
-          <label for="tab2" role="button">
+          <label for="tab2" aria-label="Backend habilities">
             <SVGBackend />
-            <br><span>Backend</span>
+            <br><span>{{ $t(`${T}.backend`) }}</span>
           </label>
         </li>
         <li title="Mobile">
-          <label for="tab3" role="button">
+          <label for="tab3" aria-label="Mobile habilities">
             <SVGMobile />
-            <br><span>Mobile</span>
+            <br><span>{{ $t(`${T}.mobile`) }}</span>
           </label>
         </li>
         <li title="Others">
-          <label for="tab4" role="button">
+          <label for="tab4" aria-label="Other habilities">
             <SVGOthers />
-            <br><span>Tools</span>
+            <br><span>{{ $t(`${T}.other`) }}</span>
           </label>
         </li>
       </ul>
@@ -38,7 +38,7 @@
       </div>
       <div class="content">
         <section>
-          <h2>Frontend</h2>
+          <h2>{{ $t(`${T}.frontend`) }}</h2>
           <div class="skill-container">
             <template v-for="item in frontend" :key="item.name">
               <AtomSkill :item="item" />
@@ -46,7 +46,7 @@
           </div>
         </section>
         <section>
-          <h2>Backend</h2>
+          <h2>{{ $t(`${T}.backend`) }}</h2>
           <div class="skill-container">
             <template v-for="item in backend" :key="item.name">
               <AtomSkill :item="item" />
@@ -54,7 +54,7 @@
           </div>
         </section>
         <section>
-          <h2>Mobile</h2>
+          <h2>{{ $t(`${T}.mobile`) }}</h2>
           <div class="skill-container">
             <template v-for="item in mobile" :key="item.name">
               <AtomSkill :item="item" />
@@ -62,7 +62,7 @@
           </div>
         </section>
         <section>
-          <h2>Tools</h2>
+          <h2>{{ $t(`${T}.other`) }}</h2>
           <div class="skill-container">
             <template v-for="item in others" :key="item.name">
               <AtomSkill :item="item" />
@@ -80,7 +80,7 @@ import SVGBackend from '@/assets/svg/skills/backend.svg'
 import SVGMobile from '@/assets/svg/skills/mobile.svg'
 import SVGOthers from '@/assets/svg/skills/tools.svg'
 import { frontend, backend, mobile, others } from '@/assets/data/skills'
-
+const T = 'skills'
 </script>
 
 <style lang="scss">
@@ -92,7 +92,8 @@ import { frontend, backend, mobile, others } from '@/assets/data/skills'
   padding: 20px 0;
   margin: 0 auto;
   margin-top: 22px;
-  background: var(--bg-color);
+
+  // background: var(--bg-color);
   border-radius: 5px;
 
   // box-shadow: 0 14px 28px rgb(29 255 33 / 25%), 0 10px 10px rgb(0 255 21 / 22%);
@@ -126,7 +127,7 @@ import { frontend, backend, mobile, others } from '@/assets/data/skills'
       label {
         padding: 5px auto;
         overflow: hidden;
-        color: #4d6768;
+        color: var(--gray);
         text-overflow: ellipsis;
         white-space: nowrap;
         cursor: pointer;
@@ -135,11 +136,11 @@ import { frontend, backend, mobile, others } from '@/assets/data/skills'
         -webkit-touch-callout: none;
 
         &:hover, &:focus, &:active {
-          color: #6e9294;
+          color: var(--gray-hover);
           outline: 0;
 
           svg * {
-            fill: #6e9294;
+            fill: var(--gray-hover);
           }
         }
 
@@ -150,7 +151,7 @@ import { frontend, backend, mobile, others } from '@/assets/data/skills'
           scale: 1.3;
 
           * {
-            fill: #4d6768;
+            fill: var(--gray-svg);
           }
         }
 
@@ -190,7 +191,7 @@ import { frontend, backend, mobile, others } from '@/assets/data/skills'
       max-width: 100%;
       height: 4px;
       margin: 0 auto;
-      background: #00adb5;
+      background: var(--primary-color);
       border-radius: 1px;
     }
 
@@ -212,7 +213,7 @@ import { frontend, backend, mobile, others } from '@/assets/data/skills'
       h2 {
         display: none;
         margin-bottom: 12px;
-        color: #00adb5;
+        color: var(--primary-color);
 
         &::after {
           position: relative;
@@ -222,7 +223,7 @@ import { frontend, backend, mobile, others } from '@/assets/data/skills'
           height: 3px;
           margin-top: 5px;
           content: "";
-          background: #00adb5;
+          background-color: var(--primary-color);
         }
 
         @media (max-width: 600px) {
@@ -249,15 +250,11 @@ import { frontend, backend, mobile, others } from '@/assets/data/skills'
 
   input[name="tab-control"]:nth-of-type(1):checked {
     & ~ ul > li:nth-child(1) > label {
-      color: #00adb5;
+      color: var(--primary-color);
       cursor: default;
 
       svg * {
-        fill: #00adb5;
-      }
-
-      @media (max-width: 600px) {
-        background: rgb(0 0 0 / 8%);
+        fill: var(--primary-color);
       }
     }
 
@@ -272,15 +269,11 @@ import { frontend, backend, mobile, others } from '@/assets/data/skills'
 
   input[name="tab-control"]:nth-of-type(2):checked {
     & ~ ul > li:nth-child(2) > label {
-      color: #00adb5;
+      color: var(--primary-color);
       cursor: default;
 
       & svg * {
-        fill: #00adb5;
-      }
-
-      @media (max-width: 600px) {
-        background: rgb(0 0 0 / 8%);
+        fill: var(--primary-color);
       }
     }
 
@@ -295,16 +288,13 @@ import { frontend, backend, mobile, others } from '@/assets/data/skills'
 
   input[name="tab-control"]:nth-of-type(3):checked {
     & ~ ul > li:nth-child(3) > label {
-      color: #00adb5;
+      color: var(--primary-color);
       cursor: default;
 
       & svg * {
-        fill: #00adb5;
+        fill: var(--primary-color);
       }
 
-      @media (max-width: 600px) {
-        background: rgb(0 0 0 / 8%);
-      }
     }
 
     & ~ .slider {
@@ -318,16 +308,16 @@ import { frontend, backend, mobile, others } from '@/assets/data/skills'
 
   input[name="tab-control"]:nth-of-type(4):checked {
     & ~ ul > li:nth-child(4) > label {
-      color: #00adb5;
+      color: var(--primary-color);
       cursor: default;
 
       & svg * {
-        fill: #00adb5;
+        fill: var(--primary-color);
       }
 
-      @media (max-width: 600px) {
-        background: rgb(0 0 0 / 8%);
-      }
+      // @media (max-width: 600px) {
+      //   background: rgb(0 0 0 / 8%);
+      // }
     }
 
     & ~ .slider {

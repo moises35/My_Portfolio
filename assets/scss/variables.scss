@@ -1,14 +1,30 @@
 :root {
   // colors
   --text-color: #F5F5F5;
+  --text-color-2: #F5F5F5;
   --primary-color: #00ADB5;
-  --primary-color-hover: #00acb5db;
-  --secondary-color: #215E62;
+
+  // --primary-color-hover: #00acb5db;
+  --primary-color-hover: #00c7d1db;
+  --secondary-color: #03777d;
   --bg-primary: #1A1A29;
   --bg-secondary: #1818244f;
+  --bg-card: #31313F;
+  --bg-badge: #555;
+  --bg-form: #1818244f;
+  --form-border: #333;
+  --badge-text-color: #ebfffc;
   --gray: #BDBDBD;
-  --btn-text-primary-color: #F5F5F5;
+  --gray-hover: #6e9294;
+  --gray-svg: #4d6768;
+  --btn-primary-color: #008d97;
+  --btn-text-primary-color: #ebfffc;
   --btn-text-secondary-color: #F5F5F5;
+  --timeline-line: #313d4f;
+  --timeline-description: #a9c7df;
+  --highlight-text: #8f9aa7;
+  --social-icons-bg-hover: #008d97;
+  
 
   // font
   --big-title: 34px;
@@ -23,12 +39,12 @@
   --section-margin-bottom-desktop: 55px;
   --layout-padding-mobile: 8%;
   --layout-padding-desktop: 10%;
-  --layout-max-width: 1920px;
+  --layout-max-width: 1500px;
 
   @media only screen and (min-width: 992px) {
-    --big-title: 52px;
+    --big-title: 42px;
     --title: 32px;
-    --body: 18px;
+    --body: 16px;
     --btn-text: 16px;
     --sm-text: 12px;
     --medium-text: 24px;
@@ -37,13 +53,24 @@
 
 .light-mode {
   --text-color: #333;
-  --primary-color: #00ADB5;
-  --secondary-color: #215E62;
-  --bg-primary: #e1e1e1;
-  --bg-secondary: #18182405;
-  --gray: #BDBDBD;
-
-  // --bg-secondary: #e9e9e9;
-  --btn-text-primary-color: #e9e9e9;
-  --btn-text-secondary-color: #333;
+  --text-color-2: #000;
+  --primary-color: #007a7a;
+  --primary-color-hover: #1c9a9a;
+  --bg-primary: #fff;
+  --bg-secondary: rgb(227 227 227 / 0%);
+  --bg-card: #fbfbfba1;
+  --bg-badge: #e2efef;
+  --bg-form: #fbfbfba1;
+  --form-border: #3333332e;
+  --badge-text-color: #000;
+  --gray: #575757;
+  --gray-hover: #6e9294;
+  --gray-svg: #4d6768;
+  --btn-primary-color: #007a7a;
+  --btn-text-primary-color: #f3f7f8;
+  --btn-text-secondary-color: #242424;
+  --timeline-line: #313d4fc2;
+  --timeline-description: #52595f;
+  --highlight-text: #3b3b3b;
+  --social-icons-bg-hover: #17a9a9;
 }

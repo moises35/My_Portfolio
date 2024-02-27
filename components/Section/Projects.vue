@@ -1,6 +1,6 @@
 <template>
   <section class="projects">
-    <AtomTitle title="Proyecto" />
+    <AtomTitle :title="$t(`${T}.title`)" />
     <div class="projects-container">
       <template v-for="project in projects" :key="project.slug">
         <AtomCard
@@ -21,20 +21,28 @@ const T = 'projects'
 
 const projects = [
   {
-    slug: 'coinbase',
-    title: 'Coinbase Clone',
-    image: '/img/projects/coinbaseClone.png',
-    demo: 'https://coinbase-clone-1b3d3.web.app/',
-    repository: 'https://coinbase-clone-1b3d3.web.app/',
-    skills: [ 'React', 'TypeScript', 'Firebase', 'Sass' ],
+    slug: 'contacts_app',
+    title: 'Contacts App',
+    image: '/img/projects/contacts_app.jpg',
+    demo: 'https://contactsapp-enqe.onrender.com/',
+    repository: 'https://github.com/moises35/Contacts_App',
+    skills: [ 'Node.js', 'Express.js', 'PostgreSQL', 'HTML5', 'CSS3', 'JavaScript' ],
   },
   {
     slug: 'coinbase',
     title: 'Coinbase Clone',
-    image: '/img/projects/coinbaseClone.png',
-    demo: 'https://coinbase-clone-1b3d3.web.app/',
-    repository: 'https://coinbase-clone-1b3d3.web.app/',
-    skills: [ 'React', 'TypeScript', 'Firebase', 'Sass' ],
+    image: '/img/projects/coinbase.jpg',
+    demo: 'https://moises35.github.io/Coinbase_Web/',
+    repository: 'https://github.com/moises35/Coinbase_Web',
+    skills: [ 'HTML5', 'CSS3', 'SASS', 'Bootstrap', 'JavaScript' ],
+  },
+  {
+    slug: 'sharefy',
+    title: 'Sharefy',
+    image: '/img/projects/sharefy.jpg',
+    demo: 'https://sharefy.netlify.app/',
+    repository: 'https://github.com/moises35/ShareFy',
+    skills: [ 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Bootstrap', 'Socket.io', 'JSONWebToken' ],
   },
 ]
 </script>
@@ -46,6 +54,7 @@ section.projects {
     flex-wrap: wrap;
     gap: 42px 32px ;
     justify-content: center;
+    padding-bottom: 22px;
     margin-top: 32px;
   }
 }

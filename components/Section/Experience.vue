@@ -1,6 +1,6 @@
 <template>
   <section class="experience">
-    <AtomTitle title="Experiencia" />
+    <AtomTitle :title="$t(`${T}.title`)" />
     <div class="timeline-container">
       <template v-for="item in experience" :key="item.slug">
         <AtomTimeLineItem

@@ -7,6 +7,7 @@
       { 'inverse': iconPosition === 'right' },
       { 'little': size === 'sm'},
       { 'secondary': color === 'secondary' },
+      { 'bubble-animation': animation === 'bubble' },
     ]"
   >
     <template v-if="icon">
@@ -23,6 +24,7 @@
       { 'inverse': iconPosition === 'right' },
       { 'secondary': color === 'secondary' },
       { 'little': size === 'sm'},
+      { 'bubble-animation': animation === 'bubble' },
     ]"
   >
     <template v-if="icon">
@@ -63,6 +65,10 @@ defineProps({
     type: String,
     default: 'md',
   },
+  animation: {
+    type: String,
+    default: '',
+  },
 })
 </script>
 
@@ -74,15 +80,9 @@ defineProps({
   font-size: var(--btn-text);
   font-weight: 500;
   color: var(--btn-text-primary-color);
-  background-color: var(--primary-color);
+  background-color: var(--btn-primary-color);
   border-radius: 8px;
-  transition: background-color .3s;
-
-  &:hover {
-    color: var(--btn-text-primary-color);
-    cursor: pointer;
-    background-color: var(--primary-color-hover);
-  }
+  transition: background-color 0.3s;
 
   &.inverse {
     flex-direction: row-reverse;
@@ -93,23 +93,36 @@ defineProps({
     scale: 1.2;
   }
 
+  &.secondary {
+    color: var(--btn-text-secondary-color);
+    background-color: transparent;
+    border: 1px solid var(--btn-text-secondary-color);
+  }
+
   @media screen and (min-width: 992px) {
+    &:hover {
+      color: var(--btn-text-primary-color);
+      cursor: pointer;
+      background-color: var(--primary-color-hover);
+    }
+
+    &.secondary {
+      &:hover {
+        color: var(--btn-text-primary-color);
+        background-color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+      }
+    }
+
     gap: 10px;
 
     .icon {
       margin-top: 3px;
       scale: 1.3;
     }
-  }
 
-  &.secondary {
-    color: var(--btn-text-secondary-color);
-    background-color: transparent;
-    border: 1px solid var(--primary-color);
-
-    &:hover {
-      color: var(--btn-text-primary-color);
-      background-color: var(--primary-color);
+    &.little >  .icon {
+      margin-top: initial;
     }
   }
 

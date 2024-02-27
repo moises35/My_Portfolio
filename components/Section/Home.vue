@@ -2,10 +2,11 @@
   <section class="home">
     <div class="presentation">
       <p class="greeting">
-        {{ $t(`${T}.greeting`) }}
+        {{ greeting }}
       </p>
       <h1 class="name">
         {{ $t(`${T}.name`) }}
+        <span>{{ $t(`${T}.position`) }}</span>
       </h1>
       <p class="description">
         {{ $t(`${T}.description`) }}
@@ -22,21 +23,52 @@
           :text="$t(`${T}.cta.contact`)"
           :icon="{'icon': SVGChat}"
           color="secondary"
+          animation="bubble"
         />
       </div>
     </div>
     <div class="only-desktop profile-container">
-      <img src="/img/perfil.jpeg" alt="Moisés Alvarenga">
+      <nuxt-img
+        src="/img/perfil.jpeg"
+        sizes="xs:340px"
+        format="webp"
+        alt="Moisés Alvarenga"
+      />
     </div>
     <AtomMouseScroll />
   </section>
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import SVGPdf from '@/assets/svg/pdf.svg'
 import SVGChat from '@/assets/svg/chat.svg'
 
+const { t } = useI18n()
 const T = 'home'
+const greeting = ref(t(`${T}.greeting`))
+
+const delay = 100
+const typingEffect = (originalGreeting: string) => {
+  let i = 0
+
+  greeting.value = ''
+
+  const typeInterval = setInterval(() => {
+    if (i < originalGreeting.length) {
+      greeting.value += originalGreeting.charAt(i)
+      i++
+    }
+    else {
+      clearInterval(typeInterval)
+      setTimeout(() => typingEffect(t(`${T}.greeting`)), 3000)
+    }
+  }, delay)
+}
+
+onMounted(() => {
+  typingEffect(t(`${T}.greeting`))
+})
 </script>
 
 <style lang="scss">
@@ -48,39 +80,68 @@ section.home {
 
   .presentation {
     .greeting {
-      margin-bottom: 6px;
+      // margin-bottom: 6px;
       overflow: hidden;
       font-size: var(--medium-text);
       font-weight: 600;
       color: var(--primary-color);
       white-space: nowrap;
 
-      &.animated-typing {
-        width: 16.5ch;
-        border-right: 4px solid;
-        animation: typing 2s steps(17), blink .5s infinite step-end alternate;
+      &::after {
+        margin-left: 2px;
+        content: '';
+        border: 1px solid;
+        animation: blink 1s infinite;
       }
-    }
 
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-    }
+      @keyframes blink {
+        0% {
+          visibility: hidden;
+        }
 
-    @keyframes blink {
-      50% {
-        border-color: transparent;
+        50% {
+          visibility: hidden;
+        }
+
+        100% {
+          visibility: visible;
+        }
       }
     }
 
     .name {
-      margin-bottom: 6px;
+      position: relative;
+      margin-bottom: 32px;
       font-size: var(--big-title);
+      color: var(--text-color-2);
+
+      span {
+        position: absolute;
+        bottom: -12px;
+        left: 1px;
+        font-size: 18px;
+        font-weight: 100;
+        color: transparent;
+        background-image: linear-gradient(110deg, var(--text-color), 45%, var(--primary-color), 55%, var(--text-color));
+        background-clip: text;
+        background-size: 250% 100%;
+        animation: background-shine 2s linear infinite;
+      }
+
+      @keyframes background-shine {
+        0% {
+          background-position: 0 0;
+        }
+
+        100% {
+          background-position: -200% 0;
+        }
+      }
     }
 
     .description {
       margin-bottom: 32px;
+      font-size: 16px;
     }
 
     .cta-container {
@@ -97,8 +158,15 @@ section.home {
         font-size: 24px;
       }
 
+      .name {
+        span {
+          font-size: 18px;
+        }
+      }
+
       .description {
         max-width: 550px;
+        font-size: 18px;
       }
 
       .cta-container {
@@ -112,6 +180,7 @@ section.home {
         height: 320px;
         border-radius: 50%;
         outline: 2px solid white;
+        box-shadow: 0 0 11px 3px rgb(0 0 0 / 10%);
       }
     }
   }

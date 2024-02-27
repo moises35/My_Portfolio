@@ -1,16 +1,24 @@
 <template>
   <div class="card">
-    <div class="cover">
-      <img src="/img/projects/coinbaseClone.png" alt="Coinbase">
-    </div>
-    <div class="content">
-      <h3>{{ title }}</h3>
-      <p>{{ description }}</p>
-    </div>
-    <div v-if="skills.length > 0" class="skills-container">
-      <template v-for="skill in skills" :key="skill">
-        <AtomBadge :text="String(skill)" />
-      </template>
+    <div>
+      <div class="cover">
+        <nuxt-img
+          :src="(image)"
+          sizes="xs:296px"
+          :alt="`Img - ${title}`"
+          format="webp"
+          loading="lazy"
+        />
+      </div>
+      <div class="content">
+        <h3>{{ title }}</h3>
+        <p>{{ description }}</p>
+      </div>
+      <div v-if="skills.length > 0" class="skills-container">
+        <template v-for="skill in skills" :key="skill">
+          <AtomBadge :text="String(skill)" />
+        </template>
+      </div>
     </div>
     <div class="btn-container">
       <AtomBtn
@@ -35,7 +43,7 @@
 </template>
 
 <script setup lang="ts">
-import SVGGitHub from '@/assets/svg/github.svg'
+import SVGGitHub from '@/assets/svg/footer/github.svg'
 import SVGExternal from '@/assets/svg/external.svg'
 
 defineProps({
@@ -71,10 +79,14 @@ defineProps({
 
 <style lang="scss">
 div.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 320px;
   padding: 12px 12px 16px;
-  background-color: #31313F;
+  background-color: var(--bg-card);
   border-radius: 12px;
+  box-shadow: 0 0 14px 5px rgb(0 0 0 / 10%);
 
   .cover {
     height: 180px;
@@ -85,19 +97,13 @@ div.card {
     img {
       width: 100%;
       height: 100%;
-      filter: opacity(0.5);
-      transition: all 0.3s ease-in-out;
       object-fit: fill;
 
-      &:hover {
-        filter: none;
-        transform: scale(1.1);
-      }
     }
   }
 
   .content {
-    margin-bottom: 32px;
+    margin-bottom: 22px;
 
     h3 {
       margin-bottom: 4px;
@@ -119,6 +125,20 @@ div.card {
   .btn-container {
     display: flex;
     justify-content: space-evenly;
+  }
+
+  @media screen and (min-width: 992px) {
+    .cover {
+      img {
+        filter: opacity(0.5);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          filter: none;
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 }
 </style>

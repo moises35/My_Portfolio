@@ -6,7 +6,13 @@
     <span class="eeuu">
       <SVGUnitedState />
     </span>
-    <input type="checkbox" class="input" :checked="locale === 'en'" @change="toggleLanguage">
+    <input
+      aria-label="Language Switcher"
+      type="checkbox"
+      class="input"
+      :checked="locale === 'en'"
+      @change="toggleLanguage"
+    >
     <span class="slider" />
   </label>
 </template>
@@ -42,7 +48,7 @@ const toggleLanguage = () => {
     position: absolute;
     inset: 0;
     cursor: pointer;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-radius: 30px;
     transition: .4s;
 

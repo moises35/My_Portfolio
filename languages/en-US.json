@@ -7,47 +7,70 @@
     "contact": "Contact"
   },
   "home": {
-    "greeting": "Hi! I'm",
+    "greeting": "Hi! My name is,",
     "name": "Moisés Alvarenga",
-    "description": "Soy un estudiante de la carrera de Ingeniería en Informática de Paraguay. Me encanta todo lo relacionado a técnologias de la web, tanto Frontend como Backend. Estoy enfocado en construir aplicaciones con buena experiencia de usuario y código de alta calidad.",
+    "position": "FullStack Developer",
+    "description": "+4 years of experience. Computer Engineer, FullStack Web Developer, and Mobile Developer. Focused on continuously learning new paradigms and technologies to apply the right solution in the right place.",
     "cta": {
       "cv": "CV",
-      "contact": "Contáctame"
+      "contact": "Contact Me"
     }
   },
   "aboutMe": {
-    "title": "About me",
-    "description": "Soy un estudiante de la carrera de Ingeniería en Informática de Paraguay. Me encanta todo lo relacionado a técnologias de la web, tanto Frontend como Backend. Estoy enfocado en construir aplicaciones con buena experiencia de usuario y código de alta calidad.",
-    "description2": "Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users."
+    "title": "About Me",
+    "description": "Hello!👋🏻 My name is Moisés Alvarenga and I'm from Paraguay. Currently, I'm in the final stage of my computer engineering education at the National University of Asunción. I'm passionate about all branches of computer science, although I'm primarily specialized in web and mobile development.",
+    "description2": "years of experience in web development and 2 years in mobile applications, I love to stay updated with the latest technologies and trends to provide more effective solutions with better performance. I'm willing to learn new technologies, enjoy acquiring new knowledge, working in teams, and receiving feedback on my work as I consider it fundamental for my professional growth.",
+    "description3": "Among other things I enjoy doing is contributing to open-source projects, as I recently did with the <a href=\"https://svgl.vercel.app/\">SVGl</a> project. Outside of the professional realm, I'm passionate about music, traveling, and enjoying nature."
   },
   "skills": {
-    "title": "Habilidades",
+    "title": "Skills",
     "frontend": "Frontend",
+    "mobile": "Mobile",
     "backend": "Backend",
-    "other": "Otras"
+    "other": "Others"
   },
   "experience": {
-    "title": "Experiencia",
+    "title": "Experiences and Education",
     "estudioObliquo": {
       "enterprise": "Estudio Obliquo",
-      "date": "Mayo 2023 - Actualidad",
-      "position": "Desarrollador Web",
-      "description": "Desarrollador web en Estudio Obliquo"
+      "date": "May 2023 - Present",
+      "position": "FullStack Web Developer",
+      "description": "<li>Development of web interfaces with <span>Nuxt3</span> using the compositions API for a modular and maintainable architecture.</li> <li>Implementation of internationalization with <span>i18n</span>, state management using <span>Pinia</span>, image optimization with <span>&#64nuxt/image</span>, use of <span>TypeScript</span> for typing, and application of coding standards with <span>ESLint</span> and <span>Stylelint</span>.</li> <li>Use of <span>Docker</span> for project packaging.</li> <li>Integration of headless CMS such as <span>Tina</span>, <span>Strapi</span>, and <span>Sanity</span>.</li> <li>Creation of plugins in <span>Strapi</span>.</li>"
     },
     "codingDojo": {
       "enterprise": "Coding Dojo",
-      "date": "Febrero 2020 - Actualidad",
-      "position": "Desarrollador MERN",
-      "description": "Estudie el stack mern"
+      "date": "November 2022 - March 2023",
+      "position": "MERN Stack Developer",
+      "description": "<li>Acquisition of skills in component reuse and modularization for the development of scalable web applications.</li> <li>Manipulation and storage of persistent data with <span>MongoDB</span>.</li> <li>Construction of robust web servers using <span>Express.js</span>.</li> <li>Advanced development of interactive and dynamic user interfaces using <span>React.js</span>.</li> <li>Creation of server-side applications applying modern practices with <span>Node.js</span>.</li> <li>Demonstration of skills in problem-solving and development of creative solutions in collaborative development environments.</li>"
     },
     "fpuna": {
       "enterprise": "Facultad Politécnica - UNA",
-      "date": "Febrero 2020 - Actualidad",
-      "position": "Ingeniería en Informática",
-      "description": "Estudiante de ingenieria em eefas"
+      "date": "February 2020 - Present",
+      "position": "Computer Engineering",
+      "description": "<li>Development of skills in computer science for solving real-world problems through the construction of computational models and their implementation.</li> <li>Ability to plan, design, and implement computer projects, evaluating system architectures.</li> <li>Ability to work in teams and communicate efficiently both orally and in writing.</li> <li>Critical analysis in the use of technologies for each project and implementation of efficient algorithms to optimize the performance and scalability of developed solutions.</li>"
     }
   },
   "projects": {
-    "coinbase": "Clone de la pagina principal de coinbase"
+    "title": "Projects",
+    "coinbase": "Clone of Coinbase's homepage",
+    "sharefy": "Clone of Sharefy's homepage",
+    "contacts_app": "Contacts App Clone"
+  },
+  "contacts": {
+    "title": "Contact",
+    "title_description": "Let's be awesome together!",
+    "description": "If you have collaboration opportunities, job offers, or want to build something awesome, feel free to contact me!",
+    "form": {
+      "name": "Name and Last Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send",
+      "sending": "Sending...",
+      "error": "An error occurred while sending the form. Please try again later or contact directly at the following email:",
+      "success": "The message was sent successfully! I will get in touch with you as soon as possible <br><span class=\"highlight\">Thank you</span>"
+    }
+  },
+  "footer": {
+    "thanks": "Thanks for viewing my work!👋🏻"
   }
 }

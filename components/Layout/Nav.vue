@@ -2,11 +2,6 @@
   <nav class="only-desktop nav-bar">
     <ul>
       <li>
-        <NuxtLink to="#about-me">
-          {{ $t(`${T}.aboutMe`) }}
-        </NuxtLink>
-      </li>
-      <li>
         <NuxtLink to="#experience">
           {{ $t(`${T}.experience`) }}
         </NuxtLink>
@@ -14,6 +9,11 @@
       <li>
         <NuxtLink to="#projects">
           {{ $t(`${T}.projects`) }}
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="#about-me">
+          {{ $t(`${T}.aboutMe`) }}
         </NuxtLink>
       </li>
       <li>

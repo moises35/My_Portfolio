@@ -4,6 +4,7 @@
       <RoughNotation
         type="underline"
         :is-show="visible"
+        :color="colorActual === 'light' ? '#025a4e' : '#00ADB5'"
       >
         {{ title }}
       </RoughNotation>
@@ -12,7 +13,10 @@
 </template>
 
 <script setup lang="ts">
-import { Waypoint, type WaypointState } from 'vue-waypoint'
+import { type WaypointState } from 'vue-waypoint'
+import * as vueWaypoint from 'vue-waypoint'
+
+const Waypoint = vueWaypoint.Waypoint
 
 defineProps({
   title: {
@@ -22,10 +26,20 @@ defineProps({
 })
 
 const visible = ref(false)
+const colorMode = useColorMode()
+const colorActual = ref('')
+
+watch(colorMode, (newColorMode) => {
+  colorActual.value = newColorMode.preference
+})
 
 const onChange = (waypointState: WaypointState) => {
   visible.value = waypointState.going === 'IN'
 }
+
+onMounted(() => {
+  colorActual.value = colorMode.preference
+})
 
 </script>
 

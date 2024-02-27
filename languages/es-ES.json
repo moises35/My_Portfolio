@@ -9,7 +9,8 @@
   "home": {
     "greeting": "¡Hola! Mi nombre es,",
     "name": "Moisés Alvarenga",
-    "description": "Soy un estudiante de la carrera de Ingeniería en Informática de Paraguay. Me encanta todo lo relacionado a técnologias de la web, tanto Frontend como Backend. Estoy enfocado en construir aplicaciones con buena experiencia de usuario y código de alta calidad.",
+    "position": "Desarrollador FullStack",
+    "description": "+4 años de experiencia. Ingeniero en Informática, Desarrollador Web FullStack y Desarrollador Mobile. Enfocado en seguir aprendiendo nuevos paradigmas y tecnologias para aplicar la solución correcta en el lugar correcto.",
     "cta": {
       "cv": "CV",
       "contact": "Contáctame"
@@ -17,37 +18,59 @@
   },
   "aboutMe": {
     "title": "Sobre mi",
-    "description": "Soy un estudiante de la carrera de Ingeniería en Informática de Paraguay. Me encanta todo lo relacionado a técnologias de la web, tanto Frontend como Backend. Estoy enfocado en construir aplicaciones con buena experiencia de usuario y código de alta calidad.",
-    "description2": "Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users."
+    "description": "¡Hola!👋🏻 Mi nombre es Moisés Alvarenga y soy de Paraguay. Actualmente me encuentro en la etapa final de mi formación en ingeniería en informática en la Universidad Nacional de Asunción. Me apasionan todas las ramas de la informática, aunque estoy especializado principalmente en el desarrollo web y móvil.",
+    "description2": "años de experiencia en el desarrollo de aplicaciones web y 2 años en aplicaciones móviles, me encanta mantenerme actualizado con las últimas tecnologías y tendencias para así poder brindar soluciones más efectivas y con mejor rendimiento. Estoy dispuesto a aprender nuevas tecnologías, disfruto adquirir nuevos conocimientos, trabajar en equipo y recibir feedback de mis trabajos ya que considero que es fundamental para mi crecimiento profesional.",
+    "description3": "Entre otras cosas que me gustan hacer, se encuentra la colaboración en proyectos open source, como recientemente lo hice en el proyecto de <a href=\"https://svgl.vercel.app/\">SVGl</a>. Fuera del ámbito profesional, me apasiona la música, viajar y disfrutar de la naturaleza."
   },
   "skills": {
     "title": "Habilidades",
     "frontend": "Frontend",
+    "mobile": "Mobile",
     "backend": "Backend",
-    "other": "Otras"
+    "other": "Otros"
   },
   "experience": {
-    "title": "Experiencia",
+    "title": "Experiencias y Educación",
     "estudioObliquo": {
       "enterprise": "Estudio Obliquo",
       "date": "Mayo 2023 - Actualidad",
-      "position": "Desarrollador Web",
-      "description": "Desarrollador web en Estudio Obliquo"
+      "position": "FullStack Web Developer",
+      "description": "<li>Desarrollo de interfaces web con <span>Nuxt3</span> haciendo uso de la API de composiciones para una arquitectura modular y mantenible.</li> <li>Implementación de internacionalización con <span>i18n</span>, manejo de estados utilizando <span>Pinia</span>, optimización de imágenes con <span>&#64nuxt/image</span>, uso de <span>TypeScript</span> para tipado y aplicación de estándares de codificación con <span>ESLint</span> y <span>Stylelint</span>.</li> <li>Utilización de <span>Docker</span> para empaquetado de proyectos.</li> <li>Integración de headless CMS como <span>Tina</span>, <span>Strapi</span> y <span>Sanity</span>.</li> <li>Creación de plugins en <span>Strapi</span>.</li>"
     },
     "codingDojo": {
       "enterprise": "Coding Dojo",
-      "date": "Febrero 2020 - Actualidad",
-      "position": "Desarrollador MERN",
-      "description": "Estudie el stack mern"
+      "date": "Noviembre 2022 - Marzo 2023",
+      "position": "MERN Stack Developer",
+      "description": "<li>Adquisición de habilidades en la reutilización y modularización de componentes para el desarrollo de aplicaciones web escalables.</li> <li>Manipulación y almacenamiento de datos persistentes con <span>MongoDB</span>.</li> <li>Construcción de servidores web robustos utilizando <span>Express.js</span>.</li> <li>Desarrollo avanzado de interfaces de usuario interactivas y dinámicas haciendo uso de <span>React.js</span>.</li> <li>Creación de aplicaciones de lado del servidor aplicando prácticas modernas con <span>Node.js</span>.</li> <li>Demostración de habilidades en la resolución de problemas y el desarrollo de soluciones creativas en entornos de desarrollo colaborativo.</li>"
     },
     "fpuna": {
       "enterprise": "Facultad Politécnica - UNA",
       "date": "Febrero 2020 - Actualidad",
       "position": "Ingeniería en Informática",
-      "description": "Estudiante de ingenieria em eefas"
+      "description": "<li>Desarrollo de habilidades en ciencias de la computación para la solución de problemas del mundo real mediante la construcción de modelos computacionales y su implementación.</li> <li>Capacidad para planificar, diseñar e implementar proyectos informáticos, evaluando las arquitecturas de sistemas.</li> <li>Habilidad para trabajar en equipo y comunicarse eficientemente tanto oral como escrita.</li> <li>Análisis crítico en el uso de tecnologías para cada proyecto e implementación de algoritmos eficientes para optimizar el rendimiento y la escalabilidad de las soluciones desarrolladas.</li>"
     }
   },
   "projects": {
-    "coinbase": "Clone de la pagina principal de coinbase"
+    "title": "Proyectos",
+    "coinbase": "Clone de la pagina principal de coinbase",
+    "sharefy": "Clone de la pagina principal de coinbase",
+    "contacts_app": "Clone de la pagina principal de coinbase"
+  },
+  "contacts": {
+    "title": "Contacto",
+    "title_description": "¡Seamos increíbles juntos!",
+    "description": "Si tienes oportunidades de colaboración, de trabajo o quieres construir algo asombroso, ¡no dudes en contactarme!",
+    "form": {
+      "name": "Nombre y Apellido",
+      "email": "Email",
+      "message": "Mensaje",
+      "send": "Enviar",
+      "sending": "Enviando...",
+      "error": "Ha ocurrido un error en el envio del formulario. Por favor intentelo más tarde o comuniquese directamente al siguiente correo:",
+      "success": "El mensaje fue enviado con exito! Me pondre en contacto contigo en la brevedad posible <br><span class=\"highlight\">Gracias</span>"
+    }
+  },
+  "footer": {
+    "thanks": "¡Gracias por ver mi trabajo!👋🏻"
   }
 }

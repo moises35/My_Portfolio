@@ -6,7 +6,13 @@
     <span class="sun">
       <SVGSun />
     </span>
-    <input type="checkbox" class="input" :checked="colorActual === 'light'" @change="toggleColorMode">
+    <input
+      aria-label="Color Mode Switcher"
+      type="checkbox"
+      class="input"
+      :checked="colorActual === 'light'"
+      @change="toggleColorMode"
+    >
     <span class="slider" />
   </label>
 </template>

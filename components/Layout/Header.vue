@@ -2,9 +2,9 @@
   <header class="header">
     <div class="container layout-wrapper">
       <div class="logo">
-        <NuxtLink to="/">
-          <SVGLogo v-if="colorMode.value === 'dark'" />
-          <SVGLogoLight v-else />
+        <NuxtLink to="/" aria-label="Logo - Moisés Alvarenga">
+          <SVGLogoLight v-if="colorActual === 'light'" />
+          <SVGLogo v-else />
         </NuxtLink>
       </div>
       <LayoutNav />
@@ -21,6 +21,19 @@ import SVGLogo from '@/assets/svg/logo.svg'
 import SVGLogoLight from '@/assets/svg/logo-light.svg'
 
 const colorMode = useColorMode()
+const colorActual = ref('')
+
+const updateLogo = (newColorMode: string) => {
+  colorActual.value = newColorMode
+}
+
+watch(colorMode, (newColorMode) => {
+  updateLogo(newColorMode.preference)
+})
+
+onMounted(() => {
+  colorActual.value = colorMode.preference
+})
 </script>
 
 <style lang="scss">
@@ -30,6 +43,7 @@ const colorMode = useColorMode()
   z-index: 1000;
   width: 100%;
   background-color: var(--bg-secondary);
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
 
   .container {
     display: flex;

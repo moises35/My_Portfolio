@@ -62,6 +62,10 @@ html {
         list-style: none;
       }
     }
+
+    svg.current-color * {
+      fill: var(--text-color-2);
+    }
   }
 }
 
@@ -78,5 +82,35 @@ html {
   
   @media only screen and (min-width: 992px) {
     display: block;
+  }
+}
+
+html.light-mode {
+  body { 
+    background-image: radial-gradient(ellipse 80% 80% at 0% 0%,rgb(0 255 142 / 6%),hsl(1deg 0% 100% / 0%));
+  }
+
+  // p, span.date {
+  //   font-weight: 500;
+  // }
+
+  .projects-container .card  .cover {
+    border: 1px solid #e3e3e3;
+  }
+
+  // .projects-container > div.card {
+  //   background-image: linear-gradient(rgb(241 241 241) 0%, rgba(243, 243, 243, 0.64) 50%);
+  // }
+  
+  footer.footer {
+    border-top-color: #2a3a4c54;
+  }
+
+  .item-timeline > .timeline-left > .date {
+    color: var(--text-color)
+  }
+
+  section.home .profile-container img {
+    outline-color: #cfcfcf52;
   }
 }

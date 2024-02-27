@@ -6,6 +6,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'es',
       },
+      title: 'Moisés Alvarenga | My Portfolio',
       meta: [
         { name: 'title', content: 'Moisés Alvarenga | My Portfolio' },
         { charset: 'utf-8' },
@@ -19,6 +20,14 @@ export default defineNuxtConfig({
     plugins: [
       svgLoader({}),
     ],
+  },
+  runtimeConfig: {
+    public: {
+      BREVO_URL: process.env.BREVO_URL,
+      BREVO_API_KEY: process.env.BREVO_API_KEY,
+      BREVO_EMAIL_SENDER: process.env.BREVO_EMAIL_SENDER,
+      BREVO_EMAIL_TO: process.env.BREVO_EMAIL_TO,
+    },
   },
   css: [
     '@/assets/scss/global.scss',
@@ -35,6 +44,9 @@ export default defineNuxtConfig({
       { code: 'es', file: 'es-ES.json' },
       { code: 'en', file: 'en-US.json' },
     ],
+    compilation: {
+      strictMessage: false,
+    },
     defaultLocale: 'es',
     detectBrowserLanguage: false,
     lazy: false,
@@ -46,6 +58,14 @@ export default defineNuxtConfig({
   },
   image: {
     domains: [ 'localhost:3000', 'livieresg.com.py', 'pageName.netlify.app' ],
+    screens: {
+      xs: 370,
+      sm: 640,
+      md: 768,
+      lg: 900,
+      xl: 1280,
+      xxl: 1536,
+    },
   },
   devtools: { enabled: true },
 })

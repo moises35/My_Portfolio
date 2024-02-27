@@ -4,10 +4,11 @@
     <p class="description">
       {{ $t(`${T}.description`) }}
     </p>
-    <p class="description2">
+    <p class="description">
       <span class="drop-cap">4+</span>
       {{ $t(`${T}.description2`) }}
     </p>
+    <p class="description" v-html="$t(`${T}.description3`)" />
   </section>
 </template>
 
@@ -20,10 +21,16 @@ const T = 'aboutMe'
 section.about-me {
   .description {
     margin-bottom: 20px;
-  }
 
-  .description2 {
-    margin-bottom: 20px;
+    a {
+      color: var(--primary-color);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   .drop-cap {

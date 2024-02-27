@@ -1,5 +1,5 @@
 <template>
-  <span class="badge">
+  <span class="badge-skill">
     {{ text }}
   </span>
 </template>
@@ -14,17 +14,19 @@ defineProps({
 </script>
 
 <style lang="scss">
-.badge {
+.badge-skill {
   display: inline-block;
   padding: 6px 12px;
   font-size: 11px;
-  color: var(--color-white);
-  background-color: #555;
+  color: var(--badge-text-color);
+  background-color: var(--bg-badge);
   border-radius: 0.5rem;
   transition: all 0.3s;
 
-  &:hover {
-    transform: translateY(-0.2rem);
+  @media screen and (min-width: 992px) {
+    &:hover {
+      transform: translateY(-0.2rem);
+    }
   }
 }
 </style>
