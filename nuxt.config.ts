@@ -10,6 +10,7 @@ export default defineNuxtConfig({
       meta: [
         { name: 'title', content: 'Moisés Alvarenga | Portfolio' },
         { charset: 'utf-8' },
+        { name: 'google-site-verification', content: '08k5ypdlHDADRUg554Jevej9Mx9u7BgWmhacnttK9rc' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
