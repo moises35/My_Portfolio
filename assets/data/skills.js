@@ -5,8 +5,11 @@ export const frontend = [
   { name: 'ReactJS', icon: 'frontend/react' },
   { name: 'VueJS', icon: 'frontend/vue' },
   { name: 'NuxtJS', icon: 'frontend/nuxt' },
+  { name: 'Astro', icon: 'frontend/astro' },
+  { name: 'Svelte', icon: 'frontend/svelte' },
   { name: 'TypeScript', icon: 'frontend/typescript' },
   { name: 'Bootstrap', icon: 'frontend/bootstrap' },
+  { name: 'TailwindCSS', icon: 'frontend/tailwind' },
   { name: 'Sass', icon: 'frontend/sass' },
 ]
 

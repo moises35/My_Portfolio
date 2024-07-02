@@ -3,7 +3,6 @@
     <div class="icon-container">
       <nuxt-img
         :src="`/svg/skills/${item.icon}.svg`"
-        loading="lazy"
         :alt="item.name"
       />
     </div>
