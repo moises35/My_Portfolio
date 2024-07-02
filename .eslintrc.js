@@ -12,7 +12,7 @@ module.exports = {
   plugins: [],
   // add your custom rules here
   rules: {
-    'max-len': [ 'error', { code: 120 } ],
+    // 'max-len': [ 'error', { code: 120 } ],
     'comma-dangle': [ 'error', 'always-multiline' ],
     'brace-style': [ 'error', 'stroustrup', { allowSingleLine: false } ],
     'no-console': [ 'error' ],
