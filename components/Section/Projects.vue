@@ -21,12 +21,12 @@ const T = 'projects'
 
 const projects = [
   {
-    slug: 'contacts_app',
-    title: 'Contacts App',
-    image: '/img/projects/contacts_app.jpg',
-    demo: 'https://contactsapp-enqe.onrender.com/',
-    repository: 'https://github.com/moises35/Contacts_App',
-    skills: [ 'Node.js', 'Express.js', 'PostgreSQL', 'HTML5', 'CSS3', 'JavaScript' ],
+    slug: 'graph_glean',
+    title: 'Graph Glean',
+    image: '/img/projects/graph_glean.jpg',
+    demo: 'https://graphglean.netlify.app/',
+    repository: 'https://github.com/moises35/graph-glean',
+    skills: [ 'Astro', 'Svelte', 'Tailwind', 'Node.js', 'Web Scraping' ],
   },
   {
     slug: 'coinbase',

@@ -52,9 +52,9 @@
   },
   "projects": {
     "title": "Projects",
-    "coinbase": "Clone of Coinbase's homepage",
-    "sharefy": "Clone of Sharefy's homepage",
-    "contacts_app": "Contacts App Clone"
+    "graph_glean": "It is a tool built to preview the Open Graph tags of a webpage. It uses Netlify Functions to perform server-side web scraping functions.",
+    "coinbase": "The Coinbase Clone is a replica of the Coinbase landing page. This project recreates the visual design of the Coinbase landing page to offer a similar experience to the original platform.",
+    "sharefy": "Sharefy is a social network inspired by Spotify where you can post about music using the Spotify API, comment, send friend requests, and chat with your contacts. This project was developed as a final project at Coding Dojo."
   },
   "contacts": {
     "title": "Contact",
