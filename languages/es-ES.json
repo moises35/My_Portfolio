@@ -18,9 +18,9 @@
   },
   "aboutMe": {
     "title": "Sobre mi",
-    "description": "¡Hola!👋🏻 Mi nombre es Moisés Alvarenga y soy de Paraguay. Actualmente me encuentro en la etapa final de mi formación en ingeniería en informática en la Universidad Nacional de Asunción. Me apasionan todas las ramas de la informática, aunque estoy especializado principalmente en el desarrollo web y móvil.",
-    "description2": "años de experiencia en el desarrollo de aplicaciones web y 2 años en aplicaciones móviles, me encanta mantenerme actualizado con las últimas tecnologías y tendencias para así poder brindar soluciones más efectivas y con mejor rendimiento. Estoy dispuesto a aprender nuevas tecnologías, disfruto adquirir nuevos conocimientos, trabajar en equipo y recibir feedback de mis trabajos ya que considero que es fundamental para mi crecimiento profesional.",
-    "description3": "Entre otras cosas que me gustan hacer, se encuentra la colaboración en proyectos open source, como recientemente lo hice en el proyecto de <a href=\"https://svgl.vercel.app/\" target=\"_blank\" rel=\"noopener\">SVGl</a>. Fuera del ámbito profesional, me apasiona la música, viajar y disfrutar de la naturaleza."
+    "description": "¡Hola!👋🏻 Mi nombre es Moisés Alvarenga. Soy ingeniero en informática de la Universidad Nacional de Asunción. Me apasionan todas las ramas de la informática, aunque estoy especializado principalmente en el desarrollo web y móvil.",
+    "description2": "años de experiencia en el desarrollo de aplicaciones web y 1 año en aplicaciones móviles con Flutter. Me gusta aprender nuevas tecnologías y herramientas para aplicarlas en mis proyectos y asi poder crear soluciones más efectivas y con mejor rendimiento. Disfruto adquiriendo nuevos conocimientos, trabajar en equipo y recibir feedback de mis trabajos ya que considero que es fundamental para mi crecimiento profesional.",
+    "description3": "Entre otras cosas que me gustan hacer, se encuentra la colaboración en proyectos open source. Fuera del ámbito profesional, me apasiona la música y viajar."
   },
   "skills": {
     "title": "Habilidades",
