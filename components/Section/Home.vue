@@ -117,7 +117,7 @@ section.home {
 
       span {
         position: absolute;
-        bottom: -12px;
+        bottom: -17px;
         left: 1px;
         font-size: 18px;
         font-weight: 100;
@@ -160,6 +160,7 @@ section.home {
 
       .name {
         span {
+          bottom: -14px;
           font-size: 18px;
         }
       }
