@@ -1,75 +1,26 @@
-# Nuxt 3 Minimal Starter
+<div align="center"> 
+	<a href="https://moises35.vercel.app/">
+		<img src="https://github.com/moises35/My_Portfolio/assets/85299373/a370b6fc-455b-4854-8f2b-587593d6d35f" >
+	</a>
+</div>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<hr/>
 
-## Setup
+<div align="center">
 
-Make sure to install the dependencies:
+![Nuxt](https://img.shields.io/badge/Nuxt.js-00DC82?logo=nuxtdotjs&logoColor=fff&style=flat)
+![Sass](https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff&style=flat)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat)
+![Yarn ==](https://img.shields.io/badge/Yarn-2C8EBB?logo=yarn&logoColor=fff&style=flat)
+![Vercel](https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=fff&style=flat)
 
-```bash
-# npm
-npm install
+</div>
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
+## 🚀 Getting Started
+1. Clone this repository
+2. Run `yarn` 
+3. Run `yarn dev`
+4. Great!
 
-# bun
-bun install
-```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
