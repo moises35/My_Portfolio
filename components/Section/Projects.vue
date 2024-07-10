@@ -13,6 +13,9 @@
         />
       </template>
     </div>
+    <div class="more-projects">
+      <AtomBtn to="https://moises-projects.netlify.app/" text="Ver más proyectos" :is-external="true" />
+    </div>
   </section>
 </template>
 
@@ -56,6 +59,12 @@ section.projects {
     justify-content: center;
     padding-bottom: 22px;
     margin-top: 32px;
+    margin-bottom: 12px;
+  }
+
+  .more-projects {
+    display: flex;
+    justify-content: center;
   }
 }
 </style>
