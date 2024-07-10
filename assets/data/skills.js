@@ -15,6 +15,7 @@ export const frontend = [
 
 export const backend = [
   { name: 'NodeJS', icon: 'backend/nodejs' },
+  { name: 'ExpressJS', icon: 'backend/express' },
   { name: 'GraphQL', icon: 'backend/graphql' },
   { name: 'Python', icon: 'backend/python' },
   { name: 'Django', icon: 'backend/django' },
